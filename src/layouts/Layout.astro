@@ -1,0 +1,150 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="/logo.png" alt="Kanalreinigung Fuchs Logo" style="width: 120px; height: 120px;"></a>
+            </div>
+            <div class="header-center">
+                <p style="color: #E85D1C; font-weight: 700; font-size: 1.2rem; margin: 0;">24/7 für Sie erreichbar</p>
+                <p style="color: #1B3A52; font-weight: 700; font-size: 1.4rem; margin: 5px 0 0 0;">06003/8276464</p>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <slot name="nav" />
+            </nav>
+        </div>
+    </header>
+
+    <slot />
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="/#leistungen">Rohrreinigung</a></li>
+                        <li><a href="/#leistungen">Kanalreinigung</a></li>
+                        <li><a href="/#leistungen">Kanalsanierung</a></li>
+                        <li><a href="/#leistungen">TV-Inspektion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="tel:060038276464">Tel: 06003 / 8276464</a></li>
+                        <li><a href="mailto:info@kanal-fuchs.de">info@kanal-fuchs.de</a></li>
+                        <li>Konrad-Adenauer-Str. 5a</li>
+                        <li>61191 Rosbach</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Öffnungszeiten</h4>
+                    <ul>
+                        <li>Mo–Do: 07:30 – 17:00 Uhr</li>
+                        <li>Fr: 07:30 – 15:00 Uhr</li>
+                        <li>Notdienst 24/7</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="/impressum">Impressum</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
+                        <li><a href="#" onclick="showCookieSettings(); return false;">Cookie-Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook"><span>f</span></a>
+                    <a href="https://www.instagram.com/kanalfuchs" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><span>📷</span></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><span>in</span></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><span>▶</span></a>
+                </div>
+                <p style="margin-top: 20px;">&copy; 2025 Kanal- und Rohrreinigung Fuchs · Amin Abardouch · <a href="/impressum" style="color: rgba(255,255,255,0.6);">Impressum</a> · <a href="/datenschutz" style="color: rgba(255,255,255,0.6);">Datenschutz</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner" style="display:none;">
+        <div class="cookie-banner-inner">
+            <div class="cookie-text">
+                <strong>Wir verwenden Cookies</strong>
+                <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzererfahrung zu bieten. Einige Cookies sind technisch notwendig, andere helfen uns, die Website zu verbessern. Weitere Informationen finden Sie in unserer <a href="/datenschutz">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-decline" onclick="declineCookies()">Nur notwendige</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
+    <script is:inline>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            const hamburger = document.getElementById('hamburger');
+            const overlay = document.getElementById('menuOverlay');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        }
+        function closeMenu() {
+            const nav = document.getElementById('nav');
+            const hamburger = document.getElementById('hamburger');
+            const overlay = document.getElementById('menuOverlay');
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        function showCookieSettings() {
+            document.getElementById('cookieBanner').style.display = 'flex';
+        }
+        if (!localStorage.getItem('cookieConsent')) {
+            setTimeout(() => {
+                document.getElementById('cookieBanner').style.display = 'flex';
+            }, 800);
+        }
+    </script>
+</body>
+</html>
