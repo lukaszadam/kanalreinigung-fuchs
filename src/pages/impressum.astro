@@ -5,7 +5,13 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Impressum – Kanal- und Rohrreinigung Fuchs">
     <Fragment slot="nav">
         <a href="/" onclick="closeMenu()">Startseite</a>
-        <a href="/#leistungen" onclick="closeMenu()">Leistungen</a>
+        <div class="nav-dropdown">
+            <a href="/#leistungen" onclick="closeMenu()">Leistungen</a>
+            <div class="nav-dropdown-menu">
+                <a href="/kanalsanierung-frankfurt" onclick="closeMenu()">Kanalsanierung Frankfurt</a>
+                <a href="/kanalreinigung-bad-nauheim" onclick="closeMenu()">Kanalreinigung Bad Nauheim</a>
+            </div>
+        </div>
         <a href="/ueber-uns" onclick="closeMenu()">Über uns</a>
         <a href="/kontakt" onclick="closeMenu()">Kontakt</a>
     </Fragment>

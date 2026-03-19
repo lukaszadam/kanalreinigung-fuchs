@@ -2,10 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Kanalreinigung Frankfurt - Professionelle Rohrreinigung & Kanalsanierung">
+<Layout title="Kanal- und Rohrreinigung Frankfurt – 24 Stunden Notdienst">
     <Fragment slot="nav">
         <a href="#home" onclick="closeMenu()">Startseite</a>
-        <a href="#leistungen" onclick="closeMenu()">Leistungen</a>
+        <div class="nav-dropdown">
+            <a href="#leistungen" onclick="closeMenu()">Leistungen</a>
+            <div class="nav-dropdown-menu">
+                <a href="/kanalsanierung-frankfurt" onclick="closeMenu()">Kanalsanierung Frankfurt</a>
+                <a href="/kanalreinigung-bad-nauheim" onclick="closeMenu()">Kanalreinigung Bad Nauheim</a>
+            </div>
+        </div>
         <a href="/ueber-uns" onclick="closeMenu()">Über uns</a>
         <a href="/kontakt" onclick="closeMenu()">Kontakt</a>
     </Fragment>
@@ -14,6 +20,7 @@ import Layout from '../layouts/Layout.astro';
     <section class="hero" id="home">
         <div class="hero-slider">
             <img src="/kanalreinigung-frankfurt-1.jpeg" alt="Kanalreinigung Frankfurt" class="hero-slide active">
+            <img src="/kanalreinigung-frankfurt-2.png" alt="Kanalreinigung Frankfurt" class="hero-slide">
             <img src="/kanalreinigung-rohrreiniung-frankfurt.jpeg" alt="Rohrreinigung Frankfurt" class="hero-slide">
         </div>
     </section>
