@@ -20,6 +20,47 @@ import Layout from '../layouts/Layout.astro';
         <a href="/kontakt" onclick="closeMenu()">Kontakt</a>
     </Fragment>
 
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was kostet eine Kanalsanierung in Frankfurt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Kosten einer Kanalsanierung in Frankfurt hängen vom Schadensumfang, der Rohrlänge und dem gewählten Verfahren ab. Wir erstellen nach einer TV-Inspektion ein transparentes Festpreisangebot ohne versteckte Kosten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss der Kanal für die Sanierung aufgegraben werden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In den meisten Fällen nicht. Mit modernen grabungsfreien Verfahren wie Relining oder dem Kurzliner-Verfahren können wir Kanäle in Frankfurt sanieren, ohne Ihr Grundstück oder öffentliche Flächen aufzureißen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert eine Kanalsanierung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Einfache Sanierungen mit Kurzlinern sind oft innerhalb weniger Stunden erledigt. Größere Abschnitte mit Relining können einen vollen Arbeitstag in Anspruch nehmen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann ist eine Kanalsanierung in Frankfurt Pflicht?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Frankfurt am Main und Hessen gilt die Selbstüberwachungsverordnung (SÜVO). Private Grundstückseigentümer sind verpflichtet, ihre Abwasserleitungen regelmäßig auf Dichtheit zu prüfen. Bei festgestellten Schäden muss zeitnah saniert werden."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Hero Banner -->
     <section style="background: linear-gradient(135deg, #1B3A52 0%, #2a5478 100%); padding: 80px 0 60px; text-align: center;">
         <div class="container">

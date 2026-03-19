@@ -3,8 +3,9 @@ export interface Props {
   title: string;
   description?: string;
   canonical?: string;
+  robots?: string;
 }
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, robots } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,6 +16,64 @@ const { title, description, canonical } = Astro.props;
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {canonical && <link rel="canonical" href={canonical} />}
+    {robots && <meta name="robots" content={robots} />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kanal- und Rohrreinigung Fuchs" />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:image" content="https://kanal-fuchs.de/kanalreinigung-frankfurt-1.jpeg" />
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content="https://kanal-fuchs.de/kanalreinigung-frankfurt-1.jpeg" />
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Kanal- und Rohrreinigung Fuchs",
+      "url": "https://kanal-fuchs.de",
+      "telephone": "+4960038276464",
+      "email": "info@kanal-fuchs.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Konrad-Adenauer-Str. 5a",
+        "addressLocality": "Rosbach",
+        "postalCode": "61191",
+        "addressCountry": "DE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "07:30",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "07:30",
+          "closes": "15:00"
+        }
+      ],
+      "areaServed": ["Frankfurt am Main","Bad Nauheim","Rhein-Main-Gebiet","Wetterau"],
+      "priceRange": "€€",
+      "image": "https://kanal-fuchs.de/logo.png"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

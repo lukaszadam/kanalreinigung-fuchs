@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /impressum
+Disallow: /datenschutz
+
+Sitemap: https://kanal-fuchs.de/sitemap-index.xml

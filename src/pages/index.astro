@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Kanal- und Rohrreinigung Frankfurt – 24 Stunden Notdienst">
+<Layout
+  title="Kanalreinigung Frankfurt – 24/7 Notdienst | Kanal Fuchs"
+  description="Professionelle Kanalreinigung & Rohrreinigung in Frankfurt. 15+ Jahre Erfahrung, 24/7 Notdienst, Festpreise ohne versteckte Kosten. Jetzt anrufen: 06003/8276464"
+  canonical="https://kanal-fuchs.de/"
+>
     <Fragment slot="nav">
         <a href="#home" onclick="closeMenu()">Startseite</a>
         <div class="nav-dropdown">
@@ -19,9 +23,9 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-slider">
-            <img src="/kanalreinigung-frankfurt-1.jpeg" alt="Kanalreinigung Frankfurt" class="hero-slide active">
-            <img src="/kanalreinigung-frankfurt-2.png" alt="Kanalreinigung Frankfurt" class="hero-slide">
-            <img src="/kanalreinigung-rohrreiniung-frankfurt.jpeg" alt="Rohrreinigung Frankfurt" class="hero-slide">
+            <img src="/kanalreinigung-frankfurt-1.jpeg" alt="Kanalreinigung Frankfurt – Kanal Fuchs Einsatzfahrzeug" class="hero-slide active" fetchpriority="high">
+            <img src="/kanalreinigung-frankfurt-2.png" alt="Professionelle Kanalreinigung Frankfurt am Main" class="hero-slide" loading="lazy">
+            <img src="/kanalreinigung-rohrreiniung-frankfurt.jpeg" alt="Rohrreinigung Frankfurt – Hochdruckreinigung" class="hero-slide" loading="lazy">
         </div>
     </section>
 
@@ -30,8 +34,8 @@ import Layout from '../layouts/Layout.astro';
         <div class="container">
             <div class="intro-content">
                 <div class="intro-text">
-                    <h2>Kanal- und Rohrreinigung Fuchs Ihr Partner für umfassende Leistungen rund um Ihr Entwässerungssystem.</h2>
-                    <h3>Wir lösen Ihre Probleme rund um den Kanal</h3>
+                    <h1>Kanal- und Rohrreinigung Fuchs – Ihr Partner in Frankfurt & Rhein-Main</h1>
+                    <h2>Wir lösen Ihre Probleme rund um den Kanal</h2>
                     <p>Seit über 15 Jahren stehen wir unseren Kunden als zugelassener Fachbetrieb mit Kompetenz und Zuverlässigkeit zur Seite. Wir bieten Ihnen professionelle Dienstleistungen rund um Kanal- und Rohrsysteme und sorgen für schnelle sowie nachhaltige Lösungen.</p>
                     <p>Durch den Einsatz moderner Technik, fachgerechter Arbeitsweise und langjähriger Erfahrung gewährleisten wir eine effiziente und präzise Ausführung unserer Arbeiten.</p>
                     <p>Zu unseren langjährigen Auftraggebern zählen Privathaushalte, Hausverwaltungen, öffentliche Einrichtungen, Wohnungsbaugesellschaften sowie Kunden aus Gastronomie, Gewerbe und Industrie. Die Zufriedenheit unserer Kunden steht für uns dabei stets an erster Stelle.</p>
@@ -89,7 +93,7 @@ import Layout from '../layouts/Layout.astro';
                     <div class="icon">🛠️</div>
                     <h3>Kanalsanierung</h3>
                     <p>Nachhaltige Sanierung beschädigter Kanäle ohne aufwendige Grabungsarbeiten</p>
-                    <a href="#kontakt" style="color: #E85D1C; font-weight: 600; text-decoration: none; margin-top: 10px; display: inline-block;">Mehr erfahren →</a>
+                    <a href="/kanalsanierung-frankfurt" style="color: #E85D1C; font-weight: 600; text-decoration: none; margin-top: 10px; display: inline-block;">Mehr erfahren →</a>
                 </div>
                 <div class="card">
                     <div class="icon">📹</div>
