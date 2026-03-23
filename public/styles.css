@@ -162,6 +162,14 @@ body {
     opacity: 1;
 }
 
+/* Desktop: mobile slider hidden; Mobile: desktop slider hidden */
+.mobile-slider { display: none; }
+
+@media (max-width: 768px) {
+    .desktop-slider { display: none; }
+    .mobile-slider { display: block; }
+}
+
 /* Introduction Section */
 .intro-section {
     background-color: #f5f5f5;
