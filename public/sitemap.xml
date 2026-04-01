@@ -26,6 +26,31 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://kanal-fuchs.de/rohrreinigung-karben</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kanal-fuchs.de/rohr-kanalreinigung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kanal-fuchs.de/wc-bad-kueche-verstopfung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanal-fuchs.de/bodenablaeufe-keller-rueckstau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanal-fuchs.de/wurzelfraesen-kanal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kanal-fuchs.de/ueber-uns</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
