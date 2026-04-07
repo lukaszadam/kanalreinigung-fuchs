@@ -101,7 +101,35 @@ const { title, description, canonical, robots } = Astro.props;
                 <span></span>
             </div>
             <nav class="nav" id="nav">
-                <slot name="nav" />
+                <div class="nav-dropdown">
+                    <a href="/#leistungen" onclick="closeMenu()">Leistungen</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="/kanalsanierung-frankfurt" onclick="closeMenu()">Kanalsanierung Frankfurt</a>
+                        <a href="/kanalreinigung-bad-nauheim" onclick="closeMenu()">Kanalreinigung Bad Nauheim</a>
+                        <a href="/rohrreinigung-friedberg" onclick="closeMenu()">Rohrreinigung Friedberg</a>
+                        <a href="/rohrreinigung-offenbach" onclick="closeMenu()">Rohrreinigung Offenbach</a>
+                        <a href="/rohrreinigung-karben" onclick="closeMenu()">Rohrreinigung Karben</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/rohr-kanalreinigung" onclick="closeMenu()">Rohr- &amp; Kanalreinigung</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="/wc-bad-kueche-verstopfung" onclick="closeMenu()">WC / Bad / Küche</a>
+                        <a href="/bodenablaeufe-keller-rueckstau" onclick="closeMenu()">Bodenabläufe &amp; Rückstau</a>
+                        <a href="/wurzelfraesen-kanal" onclick="closeMenu()">Wurzelfräsen im Kanal</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/kanaltechnik-vorsorge" onclick="closeMenu()">Kanaltechnik &amp; Vorsorge</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="/tv-kanalinspektion" onclick="closeMenu()">TV-Kanalinspektion</a>
+                        <a href="/dichtheitspruefung" onclick="closeMenu()">Dichtheitsprüfung</a>
+                        <a href="/rueckstauklappe-wartung" onclick="closeMenu()">Rückstauklappen-Wartung</a>
+                        <a href="/kanalsanierung-frankfurt" onclick="closeMenu()">Kanalsanierung</a>
+                    </div>
+                </div>
+                <a href="/ueber-uns" onclick="closeMenu()">Über uns</a>
+                <a href="/kontakt" onclick="closeMenu()">Kontakt</a>
             </nav>
         </div>
     </header>
