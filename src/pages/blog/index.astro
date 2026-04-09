@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }: CollectionEntry<'blog'>) => !data.draft))
+  .sort((a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout
+  title="Blog – Tipps & Wissen rund um Kanalreinigung | Kanal Fuchs"
+  description="Ratgeber, Tipps und Wissen rund um Rohrreinigung, Kanalinspektion und Kanalsanierung vom Fachbetrieb Kanal Fuchs aus Rosbach."
+  canonical="https://kanal-fuchs.de/blog"
+>
+
+    <!-- Hero Banner -->
+    <section style="background: linear-gradient(135deg, #1B3A52 0%, #2a5478 100%); padding: 80px 0 60px; text-align: center;">
+        <div class="container">
+            <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 16px; line-height: 1.2;">Blog & Ratgeber</h1>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1.2rem; max-width: 650px; margin: 0 auto;">Tipps, Wissen und Ratgeber rund um Rohrreinigung, Kanalinspektion und Kanalsanierung</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section style="padding: 70px 0; background: #f4f8fb;">
+        <div class="container">
+            {posts.length === 0 ? (
+                <p style="text-align: center; color: #555; font-size: 1.1rem;">Bald erscheinen hier neue Artikel.</p>
+            ) : (
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px;">
+                    {posts.map((post: CollectionEntry<'blog'>) => (
+                        <a href={`/blog/${post.id}`} style="text-decoration: none; display: block; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                            {post.data.image && (
+                                <img src={post.data.image} alt={post.data.imageAlt ?? post.data.title} style="width: 100%; height: 200px; object-fit: cover;">
+                            )}
+                            <div style="padding: 24px;">
+                                <p style="color: #E85D1C; font-size: 0.85rem; font-weight: 600; margin: 0 0 8px;">
+                                    {post.data.date.toLocaleDateString('de-DE', { day: '2-digit', month: 'long', year: 'numeric' })}
+                                </p>
+                                <h2 style="color: #1B3A52; font-size: 1.2rem; margin: 0 0 12px; line-height: 1.4;">{post.data.title}</h2>
+                                <p style="color: #555; font-size: 0.95rem; margin: 0 0 16px; line-height: 1.6;">{post.data.description}</p>
+                                <span style="color: #E85D1C; font-weight: 600; font-size: 0.95rem;">Artikel lesen →</span>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            )}
+        </div>
+    </section>
+
+    <!-- Orange Banner -->
+    <section class="orange-banner">
+        <div class="container">
+            <div class="banner-text">
+                <h2>Fragen? Wir helfen direkt!</h2>
+                <p>Rufen Sie uns an: <a href="tel:060038276464" style="color: white; font-weight: 700;">06003 / 8276464</a></p>
+            </div>
+        </div>
+    </section>
+
+</Layout>
