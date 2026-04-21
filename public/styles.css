@@ -1104,6 +1104,17 @@ body {
     background: #f8f9fa;
     color: #E85D1C !important;
 }
+.nav-dropdown-label {
+    display: block;
+    padding: 8px 18px 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #E85D1C;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
 @media (max-width: 768px) {
     .nav-dropdown {
         display: flex;
