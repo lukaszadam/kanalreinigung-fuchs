@@ -37,10 +37,8 @@ import Layout from '../layouts/Layout.astro';
     <!-- Foto Gallery -->
     <section style="padding: 50px 0; background: #f4f8fb;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                <img src="/unser-mitarbeiter-friedberg.png" alt="Rohrreinigung Friedberg – Unser Mitarbeiter" style="width: 100%; height: 220px; object-fit: cover; border-radius: 4px;">
-                <img src="/friedberg-rohrreinigung-2.png" alt="Rohrreinigung Friedberg – Kanal Fuchs vor Ort" style="width: 100%; height: 220px; object-fit: cover; border-radius: 4px;">
-                <img src="/friedberg-rohrreinigung-1.png" alt="Rohrreinigung Friedberg – Einsatz" style="width: 100%; height: 220px; object-fit: cover; border-radius: 4px;">
+            <div style="display: flex; justify-content: center;">
+                <img src="/unser-mitarbeiter-friedberg.png" alt="Rohrreinigung Friedberg – Unser Mitarbeiter" style="width: 100%; max-width: 520px; height: 280px; object-fit: cover; border-radius: 4px;">
             </div>
         </div>
     </section>
@@ -57,7 +55,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Services -->
     <section class="cards-section">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2.2rem; color: #1B3A52; margin-bottom: 50px;">Unsere Leistungen in Friedberg</h2>
+            <h2 style="text-align: center; font-size: 2.2rem; color: #1B3A52; margin-bottom: 50px;">Professionelle Abfluss- und Kanalreinigung in Friedberg</h2>
             <div class="cards-grid">
                 <div class="card">
                     <div class="icon">💧</div>
@@ -91,6 +89,46 @@ import Layout from '../layouts/Layout.astro';
                     <h3>Verstopfter Abfluss – WC, Bad & Küche</h3>
                     <p>In Friedberger Altbauten – besonders rund um die Innenstadt und die älteren Wohngebiete in Ockstadt oder Dorheim – sind die Innenleitungen oft noch aus den 60er und 70er Jahren. Fett, Kalk und Seifenreste setzen sich über Jahre ab und verengen den Querschnitt schleichend. Wenn dann WC, Dusche oder Küchenabfluss auf einmal gar nichts mehr schlucken, helfen wir sofort.</p>
                     <a href="/wc-bad-kueche-verstopfung" style="display: inline-block; margin-top: 12px; color: #E85D1C; font-weight: 600; text-decoration: none;">Mehr erfahren →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Erweiterte Leistungen -->
+    <section style="background: #fff; padding: 70px 0;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.2rem; color: #1B3A52; margin-bottom: 16px;">Mehr als nur Rohrreinigung – unsere Leistungen im Überblick</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; color: #555; font-size: 1.05rem;">Von der Abflussreinigung bis zur grabenlosen Rohrsanierung – wir bieten Ihnen in Friedberg das komplette Leistungsspektrum.</p>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="icon">🚰</div>
+                    <h3>Abflussreinigung Friedberg</h3>
+                    <p>Ob verstopftes Waschbecken, blockierter Küchenabfluss oder träge Dusche, die <strong>Abflussreinigung</strong> gehört zu unseren häufigsten Einsätzen in Friedberg. Fettrückstände, Kalkablagerungen und Seifenreste sammeln sich über Jahre an und engen den Abfluss schleichend ein. Wir beseitigen die Ursache.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💦</div>
+                    <h3>Wasserschaden verhindern und schnell handeln</h3>
+                    <p>Eine verstopfte Leitung kann schnell zu einem handfesten <strong>Wasserschaden</strong> führen: Rückstau, Überschwemmung im Keller, nasse Wände. Je schneller wir eingreifen, desto geringer der Folgeschaden. Unser 24/7-Notdienst in Friedberg stellt sicher, dass wir im Ernstfall sofort vor Ort sind, bevor aus einem Rohrproblem ein teurer Versicherungsfall wird.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🛡️</div>
+                    <h3>Rückstausicherung & Rückstauverschluss</h3>
+                    <p>Die Wetterau ist bei Starkregen besonders gefährdet: Wenn das öffentliche Kanalnetz überlastet ist, drückt das Wasser in Kellerleitungen zurück. Ein fachgerecht eingebauter <strong>Rückstauverschluss</strong> schützt Ihr Gebäude zuverlässig vor diesem Rückstau. Wir beraten Sie zur passenden Lösung und übernehmen Einbau und Wartung.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📡</div>
+                    <h3>Rohrortung in Friedberg</h3>
+                    <p>Wissen Sie, wo genau Ihre Leitungen verlaufen? Viele Hausbesitzer in Friedbergs gewachsenen Wohngebieten stehen vor dieser Frage. Vor allem, wenn gebaut, saniert oder gegraben werden soll. Mit professioneller <strong>Rohrortung</strong> machen wir den genauen Verlauf Ihrer Kanal- und Wasserleitungen sichtbar: präzise, zerstörungsfrei und mit Dokumentation.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">⚗️</div>
+                    <h3>Kalkfraß, Urinstein & Verkrustungen</h3>
+                    <p>Die häufigsten Gegner gesunder Rohre heißen <strong>Kalkfraß</strong>, <strong>Urinstein</strong> und Verkrustungen. Besonders in Friedbergs hartem Trinkwassergebiet setzen sich Kalkablagerungen schnell fest und verengen Rohre von innen. Urinstein in gewerblichen WC-Anlagen ist ein weiteres klassisches Problem. Wir kennen diese Gegner und haben die richtige Reinigungstechnik für jeden Fall.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔩</div>
+                    <h3>Grabenlose Rohrsanierung (Inliner)</h3>
+                    <p>Wenn Kanalrohre rissig, porös oder korrodiert sind, muss das nicht bedeuten, dass Ihr Garten aufgegraben wird. Mit der <strong>grabenlosen Rohrsanierung</strong>, dem Inliner-Verfahren, ziehen wir einen neuen Liner von innen in das alte Rohr ein. Das Ergebnis: eine dichte, glatte Leitung mit langer Lebensdauer, ohne Tiefbau. Ideal für sanierungsbedürftige Altleitungen in Friedbergs Wohngebieten.</p>
                 </div>
             </div>
         </div>
@@ -158,6 +196,114 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
+
+    <!-- FAQ -->
+    <section style="background: #f4f8fb; padding: 70px 0;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.2rem; color: #1B3A52; margin-bottom: 12px;">Häufige Fragen zur Rohrreinigung in Friedberg</h2>
+            <p style="text-align: center; max-width: 650px; margin: 0 auto 48px; color: #555; font-size: 1.05rem;">Antworten auf die wichtigsten Fragen – damit Sie wissen, was Sie erwartet.</p>
+            <div style="max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+
+                <details style="background: #fff; border-radius: 6px; border: 1px solid #e0e8f0; overflow: hidden;">
+                    <summary style="padding: 22px 28px; font-size: 1.1rem; font-weight: 700; color: #1B3A52; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                        Was kostet eine Rohrreinigung in Friedberg?
+                        <span style="font-size: 1.4rem; color: #E85D1C; flex-shrink: 0; line-height: 1;">+</span>
+                    </summary>
+                    <div style="padding: 0 28px 22px; color: #444; font-size: 1rem; line-height: 1.7; border-top: 1px solid #e0e8f0;">
+                        <p style="margin: 16px 0 0;">Die Kosten für eine professionelle Rohrreinigung hängen stark von der Art der Verstopfung und dem Arbeitsaufwand ab. Wir setzen in Friedberg auf Preistransparenz: Vor Beginn der Arbeiten analysieren wir das Problem (z. B. mit einer Kamera-Inspektion) und nennen Ihnen einen fairen Preis. So gibt es keine bösen Überraschungen auf der Rechnung.</p>
+                    </div>
+                </details>
+
+                <details style="background: #fff; border-radius: 6px; border: 1px solid #e0e8f0; overflow: hidden;">
+                    <summary style="padding: 22px 28px; font-size: 1.1rem; font-weight: 700; color: #1B3A52; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                        Wie schnell ist der Notdienst in Friedberg vor Ort?
+                        <span style="font-size: 1.4rem; color: #E85D1C; flex-shrink: 0; line-height: 1;">+</span>
+                    </summary>
+                    <div style="padding: 0 28px 22px; color: #444; font-size: 1rem; line-height: 1.7; border-top: 1px solid #e0e8f0;">
+                        <p style="margin: 16px 0 0;">Da wir in der Wetterau fest verwurzelt sind, garantieren wir kurze Anfahrtswege. In der Friedberger Kernstadt sowie in Ockstadt, Fauerbach oder Dorheim sind wir bei einem akuten Notfall meist innerhalb von <strong>30 bis 60 Minuten</strong> bei Ihnen. Unser 24/7 Notruf ist an 365 Tagen im Jahr besetzt – auch an Feiertagen.</p>
+                    </div>
+                </details>
+
+                <details style="background: #fff; border-radius: 6px; border: 1px solid #e0e8f0; overflow: hidden;">
+                    <summary style="padding: 22px 28px; font-size: 1.1rem; font-weight: 700; color: #1B3A52; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                        Wer übernimmt die Kosten – Mieter oder Vermieter?
+                        <span style="font-size: 1.4rem; color: #E85D1C; flex-shrink: 0; line-height: 1;">+</span>
+                    </summary>
+                    <div style="padding: 0 28px 22px; color: #444; font-size: 1rem; line-height: 1.7; border-top: 1px solid #e0e8f0;">
+                        <p style="margin: 16px 0 0;">Grundsätzlich gilt: Der Vermieter ist für die Instandhaltung der Rohre verantwortlich. Liegt jedoch eine „unsachgemäße Nutzung" vor (z. B. Feuchttücher oder Essensreste im Abfluss), kann der Vermieter die Kosten auf den Mieter übertragen. Wir dokumentieren unsere Arbeit präzise, was oft bei der Klärung mit Hausverwaltungen oder Versicherungen hilft.</p>
+                    </div>
+                </details>
+
+                <details style="background: #fff; border-radius: 6px; border: 1px solid #e0e8f0; overflow: hidden;">
+                    <summary style="padding: 22px 28px; font-size: 1.1rem; font-weight: 700; color: #1B3A52; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                        Bieten Sie auch eine Kamera-Untersuchung (TV-Inspektion) an?
+                        <span style="font-size: 1.4rem; color: #E85D1C; flex-shrink: 0; line-height: 1;">+</span>
+                    </summary>
+                    <div style="padding: 0 28px 22px; color: #444; font-size: 1rem; line-height: 1.7; border-top: 1px solid #e0e8f0;">
+                        <p style="margin: 16px 0 0;">Ja, besonders in den historischen Vierteln rund um die Friedberger Burg und die Altstadt ist das sinnvoll. Viele Leitungen dort sind alt und anfällig für Wurzeleinwuchs oder Muffenversatz. Mit unserer modernen TV-Kamera finden wir die exakte Ursache, ohne Wände aufstemmen zu müssen.</p>
+                    </div>
+                </details>
+
+                <details style="background: #fff; border-radius: 6px; border: 1px solid #e0e8f0; overflow: hidden;">
+                    <summary style="padding: 22px 28px; font-size: 1.1rem; font-weight: 700; color: #1B3A52; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                        Warum verstopft mein Abfluss immer wieder?
+                        <span style="font-size: 1.4rem; color: #E85D1C; flex-shrink: 0; line-height: 1;">+</span>
+                    </summary>
+                    <div style="padding: 0 28px 22px; color: #444; font-size: 1rem; line-height: 1.7; border-top: 1px solid #e0e8f0;">
+                        <p style="margin: 16px 0 0;">Häufige Ursachen sind Kalkablagerungen, Urinstein oder Fettablagerungen, die den Rohrdurchmesser über Jahre verengen. Eine einfache Spirale löst oft nur das akute Problem – wir empfehlen in solchen Fällen eine gründliche <strong>Hochdruckspülung</strong>, um das Rohr nachhaltig von allen Rückständen zu befreien.</p>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <script type="application/ld+json" is:inline>{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was kostet eine Rohrreinigung in Friedberg?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Kosten für eine professionelle Rohrreinigung hängen stark von der Art der Verstopfung und dem Arbeitsaufwand ab. Wir setzen in Friedberg auf Preistransparenz: Vor Beginn der Arbeiten analysieren wir das Problem (z. B. mit einer Kamera-Inspektion) und nennen Ihnen einen fairen Preis. So gibt es keine bösen Überraschungen auf der Rechnung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie schnell ist der Notdienst in Friedberg vor Ort?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da wir in der Wetterau fest verwurzelt sind, garantieren wir kurze Anfahrtswege. In der Friedberger Kernstadt sowie in Ockstadt, Fauerbach oder Dorheim sind wir bei einem akuten Notfall meist innerhalb von 30 bis 60 Minuten bei Ihnen. Unser 24/7 Notruf ist an 365 Tagen im Jahr besetzt – auch an Feiertagen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wer übernimmt die Kosten – Mieter oder Vermieter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grundsätzlich gilt: Der Vermieter ist für die Instandhaltung der Rohre verantwortlich. Liegt jedoch eine unsachgemäße Nutzung vor (z. B. Feuchttücher oder Essensreste im Abfluss), kann der Vermieter die Kosten auf den Mieter übertragen. Wir dokumentieren unsere Arbeit präzise, was oft bei der Klärung mit Hausverwaltungen oder Versicherungen hilft."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bieten Sie auch eine Kamera-Untersuchung (TV-Inspektion) an?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, besonders in den historischen Vierteln rund um die Friedberger Burg und die Altstadt ist das sinnvoll. Viele Leitungen dort sind alt und anfällig für Wurzeleinwuchs oder Muffenversatz. Mit unserer modernen TV-Kamera finden wir die exakte Ursache, ohne Wände aufstemmen zu müssen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum verstopft mein Abfluss immer wieder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Häufige Ursachen sind Kalkablagerungen, Urinstein oder Fettablagerungen, die den Rohrdurchmesser über Jahre verengen. Eine einfache Spirale löst oft nur das akute Problem – wir empfehlen in solchen Fällen eine gründliche Hochdruckspülung, um das Rohr nachhaltig von allen Rückständen zu befreien."
+          }
+        }
+      ]
+    }</script>
 
     <!-- Orange Banner -->
     <section class="orange-banner">
