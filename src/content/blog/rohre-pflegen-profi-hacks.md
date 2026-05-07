@@ -50,6 +50,8 @@ Egal, was auf der Packung steht: Feuchttücher lösen sich im Wasser **nicht** a
 
 **Goldene Regel:** Nur das „große Geschäft" und normales Toilettenpapier gehören in die Schüssel. Alles andere ist ein Fall für den Mülleimer.
 
+Mehr dazu lesen Sie in unserem ausführlichen Ratgeber: [WC-Etikette: Was darf wirklich in die Toilette?](/blog/wc-etikette-was-darf-in-die-toilette)
+
 ## 6. Kalk-Prävention: Die lautlose Verengung
 
 In Regionen mit hartem Wasser lagert sich Kalk in den Rohren ab. Diese raue Oberfläche wirkt wie ein Klettverschluss für alles, was durch die Leitung fließt.
