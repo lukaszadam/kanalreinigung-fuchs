@@ -40,6 +40,7 @@ STIL & TON (orientiere dich genau an diesen Beispielartikeln des Betriebs):
 - Ton: sachkundig, aber menschlich und leicht zugänglich – wie ein erfahrener Handwerker, der einem Bekannten erklärt, was er wissen muss
 - Sprache: konkret, kein Fachjargon ohne Erklärung, keine generischen Aussagen
 - Örtlicher Bezug: Wetterau, Frankfurt-Umland, Rosbach, Friedberg, Bad Homburg, Karben, Niddatal – immer dann einbauen, wenn es natürlich wirkt (Altbauten, Grundwasser, Wasserqualität in der Region)
+- Interne Verlinkung: Baue pro Artikel mindestens 2 natürliche Links zu diesen Stadtseiten ein, wo der Ortsname im Text vorkommt: [Friedberg](/rohrreinigung-friedberg), [Bad Homburg](/rohrreinigung-bad-homburg), [Friedrichsdorf](/rohrreinigung-friedrichsdorf), [Oberursel](/rohrreinigung-oberursel), [Rosbach](/rohrreinigung-rosbach), [Karben](/rohrreinigung-karben)
 - Schreibe so, als kämen die Infos von einem Profi, der das täglich erlebt
 
 STRUKTUR:
