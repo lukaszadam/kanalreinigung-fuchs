@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@anthropic-ai/sdk": "latest"
+    "@anthropic-ai/sdk": "latest",
+    "googleapis": "latest"
   }
 }

@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { google } from 'googleapis';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -80,12 +81,32 @@ articleContent = articleContent.replace(/^```(?:markdown)?\n/, '').replace(/\n``
 fs.writeFileSync(path.join(BLOG_DIR, `${nextTopic.slug}.md`), articleContent);
 console.log(`Geschrieben: src/content/blog/${nextTopic.slug}.md`);
 
-// Ping Google and Bing sitemap endpoints
-const sitemapUrl = encodeURIComponent('https://kanal-fuchs.de/sitemap-index.xml');
-await Promise.allSettled([
-  fetch(`https://www.google.com/ping?sitemap=${sitemapUrl}`),
-  fetch(`https://www.bing.com/ping?sitemap=${sitemapUrl}`),
-]);
-console.log('Google und Bing benachrichtigt.');
+// Submit sitemap to Google Search Console
+if (process.env.GOOGLE_SERVICE_ACCOUNT_KEY) {
+  try {
+    const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
+    const auth = new google.auth.GoogleAuth({
+      credentials,
+      scopes: ['https://www.googleapis.com/auth/webmasters'],
+    });
+    const searchconsole = google.searchconsole({ version: 'v1', auth });
+    await searchconsole.sitemaps.submit({
+      siteUrl: 'https://kanal-fuchs.de/',
+      feedpath: 'https://kanal-fuchs.de/sitemap-index.xml',
+    });
+    console.log('Sitemap an Google Search Console übermittelt.');
+  } catch (err) {
+    console.warn('Search Console Übermittlung fehlgeschlagen:', err.message);
+  }
+} else {
+  // Fallback: simple ping
+  const sitemapUrl = encodeURIComponent('https://kanal-fuchs.de/sitemap-index.xml');
+  await fetch(`https://www.google.com/ping?sitemap=${sitemapUrl}`);
+  console.log('Google gepingt.');
+}
+
+// Always ping Bing
+await fetch(`https://www.bing.com/ping?sitemap=${encodeURIComponent('https://kanal-fuchs.de/sitemap-index.xml')}`);
+console.log('Bing gepingt.');
 
 console.log(`\nFertig — veröffentlicht unter: /blog/${nextTopic.slug}`);
