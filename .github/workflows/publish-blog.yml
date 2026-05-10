@@ -1,0 +1,37 @@
+name: Blogartikel veröffentlichen
+
+on:
+  schedule:
+    - cron: '0 8 */2 * *'  # Alle 2 Tage um 8 Uhr UTC (9 Uhr MEZ / 10 Uhr MESZ)
+  workflow_dispatch:         # Manueller Start über GitHub UI möglich
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Abhängigkeiten installieren
+        working-directory: scripts
+        run: npm install
+
+      - name: Artikel generieren
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node generate-article.mjs
+
+      - name: Commit und Push
+        run: |
+          git config user.name "Blog Bot"
+          git config user.email "bot@kanal-fuchs.de"
+          git add src/content/blog/
+          git diff --staged --quiet || git commit -m "Auto-publish Blogartikel [skip ci]"
+          git push
