@@ -2,8 +2,8 @@ name: Blogartikel veröffentlichen
 
 on:
   schedule:
-    - cron: '0 8 */2 * *'  # Alle 2 Tage um 8 Uhr UTC (9 Uhr MEZ / 10 Uhr MESZ)
-  workflow_dispatch:         # Manueller Start über GitHub UI möglich
+    - cron: '0 8 * * *'  # Täglich um 8 Uhr UTC (9 Uhr MEZ / 10 Uhr MESZ)
+  workflow_dispatch:
 
 jobs:
   publish:
