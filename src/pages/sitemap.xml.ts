@@ -5,7 +5,8 @@ const SITE = 'https://kanal-fuchs.de';
 
 const staticPages = [
   { path: '/',                               priority: '1.0', changefreq: 'weekly'  },
-  { path: '/kanalsanierung-frankfurt',       priority: '0.9', changefreq: 'monthly' },
+  { path: '/kanalsanierung-frankfurt',                 priority: '0.9', changefreq: 'monthly' },
+  { path: '/wasser-auslaufen-kueche-bad-frankfurt',   priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-bad-nauheim',     priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-giessen',         priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-raunheim',        priority: '0.9', changefreq: 'monthly' },
