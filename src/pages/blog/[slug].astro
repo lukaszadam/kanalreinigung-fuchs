@@ -20,6 +20,29 @@ const { Content } = await render(post);
   canonical={`https://kanal-fuchs.de/blog/${post.id}`}
 >
 
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.data.title,
+      "description": post.data.description,
+      "datePublished": post.data.date.toISOString(),
+      "author": {
+        "@type": "Organization",
+        "name": "Kanal- und Rohrreinigung Fuchs",
+        "url": "https://kanal-fuchs.de"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kanal- und Rohrreinigung Fuchs",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://kanal-fuchs.de/logo.png"
+        }
+      },
+      "url": `https://kanal-fuchs.de/blog/${post.id}`,
+      ...(post.data.image ? { "image": `https://kanal-fuchs.de${post.data.image}` } : {})
+    })} />
+
     <!-- Hero Banner -->
     <section style="background: linear-gradient(135deg, #1B3A52 0%, #2a5478 100%); padding: 70px 0 50px; text-align: center;">
         <div class="container">
