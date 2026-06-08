@@ -58,6 +58,46 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
+    <!-- Testimonials Slider -->
+    <section class="testimonials-slider-section">
+        <div class="container">
+            <h2 class="testimonials-slider-heading">Was Kunden aus Karben sagen</h2>
+            <div class="ts-wrapper">
+                <button class="ts-arrow ts-prev-k" aria-label="Vorherige Bewertung">&#8249;</button>
+                <div class="ts-track-outer">
+                    <div class="ts-track" id="tsTrackKarben">
+                        <div class="ts-card">
+                            <div class="ts-stars">★★★★★</div>
+                            <p class="ts-text">"Hatte eine hartnäckige Verstopfung in der Grundleitung – zwei andere Firmen haben nichts gefunden. Kanal Fuchs war innerhalb von 20 Minuten da, hat mit der Kamera den Wurzeleinwuchs sofort lokalisiert und die Leitung noch am selben Tag gereinigt. Sehr kompetent und ehrlich in der Beratung."</p>
+                            <p class="ts-author">— Google-Bewertung</p>
+                        </div>
+                        <div class="ts-card">
+                            <div class="ts-stars">★★★★★</div>
+                            <p class="ts-text">"Sonntagabend Rohrbruch im Keller – ich hatte keinen Plan, wen ich anrufen soll. Kanal Fuchs hat sofort abgenommen, den Schaden erklärt und war in einer halben Stunde da. Preis wurde vorher genannt, keine bösen Überraschungen. Absolut empfehlenswert!"</p>
+                            <p class="ts-author">— Google-Bewertung</p>
+                        </div>
+                        <div class="ts-card">
+                            <div class="ts-stars">★★★★★</div>
+                            <p class="ts-text">"Seit Jahren kämpfen wir mit dem Küchenabfluss. Kanal Fuchs hat auf Anhieb erklärt warum – Fettablagerungen über mehrere Meter im alten Tonrohr. Nach der Hochdruckspülung läuft alles einwandfrei. Klare Empfehlung für alle in der Wetterau."</p>
+                            <p class="ts-author">— Google-Bewertung</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="ts-arrow ts-next-k" aria-label="Nächste Bewertung">&#8250;</button>
+            </div>
+            <div class="ts-dots" id="tsDotsKarben">
+                <button class="ts-dot active" aria-label="Bewertung 1"></button>
+                <button class="ts-dot" aria-label="Bewertung 2"></button>
+                <button class="ts-dot" aria-label="Bewertung 3"></button>
+            </div>
+            <div style="text-align: center; margin-top: 28px;">
+                <a href="https://maps.app.goo.gl/DbreiUPZS1dt9GUY9" target="_blank" rel="noopener noreferrer" class="ts-google-link">
+                    ★ Alle Bewertungen auf Google ansehen
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Intro -->
     <section class="intro-section">
         <div class="container">
@@ -238,4 +278,30 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
+
+    <script>
+        (function () {
+            const track = document.getElementById('tsTrackKarben') as HTMLElement;
+            const dots = document.querySelectorAll('#tsDotsKarben .ts-dot');
+            const total = dots.length;
+            let current = 0;
+            let timer: ReturnType<typeof setInterval>;
+
+            function goTo(index: number) {
+                current = (index + total) % total;
+                track.style.transform = `translateX(-${current * 100}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === current));
+            }
+
+            function next() { goTo(current + 1); }
+            function prev() { goTo(current - 1); }
+            function resetTimer() { clearInterval(timer); timer = setInterval(next, 5000); }
+
+            document.querySelector('.ts-next-k')?.addEventListener('click', () => { next(); resetTimer(); });
+            document.querySelector('.ts-prev-k')?.addEventListener('click', () => { prev(); resetTimer(); });
+            dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); resetTimer(); }));
+
+            timer = setInterval(next, 5000);
+        })();
+    </script>
 </Layout>
