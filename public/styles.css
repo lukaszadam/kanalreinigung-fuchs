@@ -618,6 +618,140 @@ body {
     color: #E85D1C;
 }
 
+/* Testimonials Slider */
+.testimonials-slider-section {
+    background: #1B3A52;
+    padding: 60px 0 50px;
+}
+
+.testimonials-slider-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.ts-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ts-track-outer {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.ts-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.ts-card {
+    min-width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 36px 44px;
+    box-sizing: border-box;
+}
+
+.ts-stars {
+    color: #ffc107;
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+}
+
+.ts-text {
+    font-style: italic;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+}
+
+.ts-author {
+    font-weight: 700;
+    color: #E85D1C;
+    font-size: 0.95rem;
+}
+
+.ts-arrow {
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.3);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ts-arrow:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+.ts-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ts-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.ts-dot.active {
+    background: #E85D1C;
+    transform: scale(1.3);
+}
+
+.ts-google-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    padding: 11px 26px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.ts-google-link:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+    .ts-card {
+        padding: 28px 22px;
+    }
+    .ts-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1.3rem;
+    }
+}
+
 /* Testimonials Section */
 .testimonials-section {
     background-color: #f8f9fa;
