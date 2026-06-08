@@ -1251,8 +1251,11 @@ body {
 }
 
 .nav-dropdown-wide {
-    display: flex !important;
     min-width: 440px;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu.nav-dropdown-wide {
+    display: flex;
 }
 
 .nav-dropdown-col {
