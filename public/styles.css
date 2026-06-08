@@ -1238,6 +1238,18 @@ body {
     background: #f8f9fa;
     color: #E85D1C !important;
 }
+
+.nav-sub-link {
+    padding-left: 32px !important;
+    font-size: 0.82rem !important;
+    color: #888 !important;
+    background: #fafafa !important;
+}
+
+.nav-sub-link:hover {
+    color: #E85D1C !important;
+    background: #f8f9fa !important;
+}
 .nav-dropdown-label {
     display: block;
     padding: 8px 18px 4px;
