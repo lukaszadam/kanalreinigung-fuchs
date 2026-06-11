@@ -134,8 +134,14 @@ const { title, description, canonical, robots } = Astro.props;
                 <div class="nav-dropdown">
                     <a href="/rohr-kanalreinigung" onclick="closeMenu()">Rohr- &amp; Kanalreinigung</a>
                     <div class="nav-dropdown-menu">
-                        <a href="/wc-bad-kueche-verstopfung" onclick="closeMenu()">WC / Bad / Küche</a>
-                        <a href="/wasser-auslaufen-kueche-bad-frankfurt" onclick="closeMenu()" class="nav-sub-link">↳ Wasser läuft aus</a>
+                        <div class="nav-flyout">
+                            <a href="/wc-bad-kueche-verstopfung" onclick="closeMenu()">WC / Bad / Küche <span class="nav-flyout-arrow">›</span></a>
+                            <div class="nav-flyout-menu">
+                                <a href="/wasser-auslaufen-kueche-bad-frankfurt" onclick="closeMenu()">Wasser läuft aus</a>
+                                <a href="/wc-verstopft-friedberg" onclick="closeMenu()">WC verstopft Friedberg</a>
+                                <a href="/wc-verstopft-bad-homburg" onclick="closeMenu()">WC verstopft Bad Homburg</a>
+                            </div>
+                        </div>
                         <a href="/bodenablaeufe-keller-rueckstau" onclick="closeMenu()">Bodenabläufe &amp; Rückstau</a>
                         <a href="/wurzelfraesen-kanal" onclick="closeMenu()">Wurzelfräsen im Kanal</a>
                         <a href="/industriereinigung-frankfurt" onclick="closeMenu()">Industriereinigung Frankfurt</a>
