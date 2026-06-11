@@ -1058,17 +1058,24 @@ body {
     .header {
         padding: 12px 0;
     }
-    .header .container {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-        gap: 0;
+    .hamburger {
+        display: flex;
     }
-    .logo          { grid-column: 1; }
-    .header-center { grid-column: 2; text-align: center; padding: 0; display: flex; justify-content: center; }
+    .header .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 0;
+        pointer-events: auto;
+    }
     .header-center a { text-align: center; }
-    .hamburger     { grid-column: 3; display: flex; }
-    .nav           { grid-column: 1 / -1; } /* taken out of flow by position:fixed */
 
     /* ── Mobile slide-in panel ── */
     .nav {

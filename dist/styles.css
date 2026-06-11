@@ -1058,16 +1058,24 @@ body {
     .header {
         padding: 12px 0;
     }
-    .header .container {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-        gap: 0;
+    .hamburger {
+        display: flex;
     }
-    .logo          { grid-column: 1; }
-    .header-center { grid-column: 2; text-align: center; padding: 0; }
-    .hamburger     { grid-column: 3; display: flex; }
-    .nav           { grid-column: 1 / -1; } /* taken out of flow by position:fixed */
+    .header .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 0;
+        pointer-events: auto;
+    }
+    .header-center a { text-align: center; }
 
     /* ── Mobile slide-in panel ── */
     .nav {
@@ -1081,7 +1089,7 @@ body {
         justify-content: flex-start;
         align-items: stretch;
         gap: 0;
-        padding: 70px 0 40px;
+        padding: 110px 0 40px;
         overflow-y: auto;
         transition: right 0.3s ease;
         z-index: 999;
