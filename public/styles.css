@@ -1216,8 +1216,10 @@ body {
     min-width: 240px;
     z-index: 300;
     border-radius: 6px;
-    overflow: hidden;
+    overflow: visible;
 }
+.nav-dropdown-menu > a:first-child { border-radius: 6px 6px 0 0; }
+.nav-dropdown-menu > a:last-child  { border-radius: 0 0 6px 6px; }
 .nav-dropdown:hover .nav-dropdown-menu {
     display: block;
 }
