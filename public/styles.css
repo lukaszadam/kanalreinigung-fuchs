@@ -1081,7 +1081,7 @@ body {
         justify-content: flex-start;
         align-items: stretch;
         gap: 0;
-        padding: 70px 0 40px;
+        padding: 110px 0 40px;
         overflow-y: auto;
         transition: right 0.3s ease;
         z-index: 999;
