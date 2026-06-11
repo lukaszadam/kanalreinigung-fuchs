@@ -1089,33 +1089,33 @@ body {
         text-align: left;
     }
     .nav.active { right: 0; }
-    .nav *  { text-align: left !important; box-sizing: border-box; }
-    .nav-dropdown, .nav-flyout { width: 100%; }
-
     /* ── Top-level links ── */
     .nav > a,
     .nav-dropdown > a {
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
+        display: block !important;
+        width: 100%;
         padding: 15px 24px !important;
         color: #fff !important;
         font-size: 1rem !important;
         font-weight: 600 !important;
         border-bottom: 1px solid rgba(255,255,255,0.2);
         text-decoration: none;
-        text-align: left;
+        text-align: left !important;
+        position: relative;
     }
     .nav > a:hover,
     .nav-dropdown > a:hover { background: rgba(0,0,0,0.12); }
 
-    /* ── Dropdown arrow ── */
+    /* ── Dropdown arrow as absolute element ── */
     .nav-dropdown > a::after {
         content: '+';
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: 1.3rem;
         font-weight: 300;
         color: rgba(255,255,255,0.7);
-        flex-shrink: 0;
     }
     .nav-dropdown.mob-open > a::after { content: '−'; color: #fff; }
 
