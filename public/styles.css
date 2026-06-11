@@ -1065,7 +1065,8 @@ body {
         gap: 0;
     }
     .logo          { grid-column: 1; }
-    .header-center { grid-column: 2; text-align: center; padding: 0; }
+    .header-center { grid-column: 2; text-align: center; padding: 0; display: flex; justify-content: center; }
+    .header-center a { text-align: center; }
     .hamburger     { grid-column: 3; display: flex; }
     .nav           { grid-column: 1 / -1; } /* taken out of flow by position:fixed */
 
