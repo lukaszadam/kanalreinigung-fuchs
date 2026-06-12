@@ -37,7 +37,7 @@ const { title, description, canonical, robots } = Astro.props;
     <script type="application/ld+json" is:inline>
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["Plumber", "LocalBusiness"],
       "name": "Kanal- und Rohrreinigung Fuchs",
       "url": "https://kanal-fuchs.de",
       "telephone": "+4960038276464",
@@ -49,6 +49,16 @@ const { title, description, canonical, robots } = Astro.props;
         "postalCode": "61191",
         "addressCountry": "DE"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.298,
+        "longitude": 8.701
+      },
+      "hasMap": "https://maps.app.goo.gl/DbreiUPZS1dt9GUY9",
+      "sameAs": [
+        "https://www.instagram.com/kanalfuchs",
+        "https://maps.app.goo.gl/DbreiUPZS1dt9GUY9"
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -108,58 +118,58 @@ const { title, description, canonical, robots } = Astro.props;
                     <div class="nav-dropdown-menu nav-dropdown-wide">
                         <div class="nav-dropdown-col">
                             <span class="nav-dropdown-label">Frankfurt & Rhein-Main</span>
-                            <a href="/kanalsanierung-frankfurt" onclick="closeMenu()">Frankfurt</a>
-                            <a href="/rohrreinigung-offenbach" onclick="closeMenu()">Offenbach</a>
-                            <a href="/kanalreinigung-wiesbaden" onclick="closeMenu()">Wiesbaden</a>
-                            <a href="/kanalreinigung-raunheim" onclick="closeMenu()">Raunheim</a>
+                            <a href="/kanalsanierung-frankfurt/" onclick="closeMenu()">Frankfurt</a>
+                            <a href="/rohrreinigung-offenbach/" onclick="closeMenu()">Offenbach</a>
+                            <a href="/kanalreinigung-wiesbaden/" onclick="closeMenu()">Wiesbaden</a>
+                            <a href="/kanalreinigung-raunheim/" onclick="closeMenu()">Raunheim</a>
                             <span class="nav-dropdown-label">Mittelhessen</span>
-                            <a href="/kanalreinigung-giessen" onclick="closeMenu()">Gießen</a>
+                            <a href="/kanalreinigung-giessen/" onclick="closeMenu()">Gießen</a>
                         </div>
                         <div class="nav-dropdown-col">
                             <span class="nav-dropdown-label">Wetterau</span>
-                            <a href="/kanalreinigung-bad-nauheim" onclick="closeMenu()">Bad Nauheim</a>
-                            <a href="/rohrreinigung-friedberg" onclick="closeMenu()">Friedberg</a>
-                            <a href="/rohrreinigung-karben" onclick="closeMenu()">Karben</a>
-                            <a href="/rohrreinigung-rosbach" onclick="closeMenu()">Rosbach</a>
-                            <a href="/rohrreinigung-rodheim" onclick="closeMenu()">Rodheim</a>
-                            <a href="/rohrreinigung-ockstadt" onclick="closeMenu()">Ockstadt</a>
+                            <a href="/kanalreinigung-bad-nauheim/" onclick="closeMenu()">Bad Nauheim</a>
+                            <a href="/rohrreinigung-friedberg/" onclick="closeMenu()">Friedberg</a>
+                            <a href="/rohrreinigung-karben/" onclick="closeMenu()">Karben</a>
+                            <a href="/rohrreinigung-rosbach/" onclick="closeMenu()">Rosbach</a>
+                            <a href="/rohrreinigung-rodheim/" onclick="closeMenu()">Rodheim</a>
+                            <a href="/rohrreinigung-ockstadt/" onclick="closeMenu()">Ockstadt</a>
                             <span class="nav-dropdown-label">Hochtaunus</span>
-                            <a href="/rohrreinigung-bad-homburg" onclick="closeMenu()">Bad Homburg</a>
-                            <a href="/rohrreinigung-friedrichsdorf" onclick="closeMenu()">Friedrichsdorf</a>
-                            <a href="/rohrreinigung-oberursel" onclick="closeMenu()">Oberursel</a>
-                            <a href="/rohrreinigung-neu-anspach" onclick="closeMenu()">Neu-Anspach</a>
-                            <a href="/rohrreinigung-wehrheim" onclick="closeMenu()">Wehrheim</a>
-                            <a href="/rohrreinigung-usingen" onclick="closeMenu()">Usingen</a>
+                            <a href="/rohrreinigung-bad-homburg/" onclick="closeMenu()">Bad Homburg</a>
+                            <a href="/rohrreinigung-friedrichsdorf/" onclick="closeMenu()">Friedrichsdorf</a>
+                            <a href="/rohrreinigung-oberursel/" onclick="closeMenu()">Oberursel</a>
+                            <a href="/rohrreinigung-neu-anspach/" onclick="closeMenu()">Neu-Anspach</a>
+                            <a href="/rohrreinigung-wehrheim/" onclick="closeMenu()">Wehrheim</a>
+                            <a href="/rohrreinigung-usingen/" onclick="closeMenu()">Usingen</a>
                         </div>
                     </div>
                 </div>
                 <div class="nav-dropdown">
-                    <a href="/rohr-kanalreinigung" class="nav-parent-link">Rohr- &amp; Kanalreinigung</a>
+                    <a href="/rohr-kanalreinigung/" class="nav-parent-link">Rohr- &amp; Kanalreinigung</a>
                     <div class="nav-dropdown-menu">
                         <div class="nav-flyout">
-                            <a href="/wc-bad-kueche-verstopfung" onclick="closeMenu()">WC / Bad / Küche <span class="nav-flyout-arrow">›</span></a>
+                            <a href="/wc-bad-kueche-verstopfung/" onclick="closeMenu()">WC / Bad / Küche <span class="nav-flyout-arrow">›</span></a>
                             <div class="nav-flyout-menu">
-                                <a href="/wasser-auslaufen-kueche-bad-frankfurt" onclick="closeMenu()">Wasser läuft aus</a>
-                                <a href="/wc-verstopft-friedberg" onclick="closeMenu()">WC verstopft Friedberg</a>
-                                <a href="/wc-verstopft-bad-homburg" onclick="closeMenu()">WC verstopft Bad Homburg</a>
+                                <a href="/wasser-auslaufen-kueche-bad-frankfurt/" onclick="closeMenu()">Wasser läuft aus</a>
+                                <a href="/wc-verstopft-friedberg/" onclick="closeMenu()">WC verstopft Friedberg</a>
+                                <a href="/wc-verstopft-bad-homburg/" onclick="closeMenu()">WC verstopft Bad Homburg</a>
                             </div>
                         </div>
-                        <a href="/bodenablaeufe-keller-rueckstau" onclick="closeMenu()">Bodenabläufe &amp; Rückstau</a>
-                        <a href="/wurzelfraesen-kanal" onclick="closeMenu()">Wurzelfräsen im Kanal</a>
-                        <a href="/industriereinigung-frankfurt" onclick="closeMenu()">Industriereinigung Frankfurt</a>
+                        <a href="/bodenablaeufe-keller-rueckstau/" onclick="closeMenu()">Bodenabläufe &amp; Rückstau</a>
+                        <a href="/wurzelfraesen-kanal/" onclick="closeMenu()">Wurzelfräsen im Kanal</a>
+                        <a href="/industriereinigung-frankfurt/" onclick="closeMenu()">Industriereinigung Frankfurt</a>
                     </div>
                 </div>
                 <div class="nav-dropdown">
-                    <a href="/kanaltechnik-vorsorge" class="nav-parent-link">Kanaltechnik &amp; Vorsorge</a>
+                    <a href="/kanaltechnik-vorsorge/" class="nav-parent-link">Kanaltechnik &amp; Vorsorge</a>
                     <div class="nav-dropdown-menu">
-                        <a href="/tv-kanalinspektion" onclick="closeMenu()">TV-Kanalinspektion</a>
-                        <a href="/dichtheitspruefung" onclick="closeMenu()">Dichtheitsprüfung</a>
-                        <a href="/rueckstauklappe-wartung" onclick="closeMenu()">Rückstauklappen-Wartung</a>
-                        <a href="/kanalsanierung-frankfurt" onclick="closeMenu()">Kanalsanierung</a>
+                        <a href="/tv-kanalinspektion/" onclick="closeMenu()">TV-Kanalinspektion</a>
+                        <a href="/dichtheitspruefung/" onclick="closeMenu()">Dichtheitsprüfung</a>
+                        <a href="/rueckstauklappe-wartung/" onclick="closeMenu()">Rückstauklappen-Wartung</a>
+                        <a href="/kanalsanierung-frankfurt/" onclick="closeMenu()">Kanalsanierung</a>
                     </div>
                 </div>
-                <a href="/ueber-uns" onclick="closeMenu()">Über uns</a>
-                <a href="/kontakt" onclick="closeMenu()" class="nav-btn-kontakt">Kontakt</a>
+                <a href="/ueber-uns/" onclick="closeMenu()">Über uns</a>
+                <a href="/kontakt/" onclick="closeMenu()" class="nav-btn-kontakt">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -175,13 +185,13 @@ const { title, description, canonical, robots } = Astro.props;
                     <ul>
                         <li><a href="/#leistungen">Rohrreinigung</a></li>
                         <li><a href="/#leistungen">Kanalreinigung</a></li>
-                        <li><a href="/kanalsanierung-frankfurt">Kanalsanierung Frankfurt</a></li>
-                        <li><a href="/kanalreinigung-bad-nauheim">Kanalreinigung Bad Nauheim</a></li>
-                        <li><a href="/kanalreinigung-giessen">Kanalreinigung Gießen</a></li>
-                        <li><a href="/kanalreinigung-wiesbaden">Kanalreinigung Wiesbaden</a></li>
-                        <li><a href="/kanalreinigung-raunheim">Kanalreinigung Raunheim</a></li>
-                        <li><a href="/rohrreinigung-friedrichsdorf">Rohrreinigung Friedrichsdorf</a></li>
-                        <li><a href="/rohrreinigung-karben">Rohrreinigung Karben</a></li>
+                        <li><a href="/kanalsanierung-frankfurt/">Kanalsanierung Frankfurt</a></li>
+                        <li><a href="/kanalreinigung-bad-nauheim/">Kanalreinigung Bad Nauheim</a></li>
+                        <li><a href="/kanalreinigung-giessen/">Kanalreinigung Gießen</a></li>
+                        <li><a href="/kanalreinigung-wiesbaden/">Kanalreinigung Wiesbaden</a></li>
+                        <li><a href="/kanalreinigung-raunheim/">Kanalreinigung Raunheim</a></li>
+                        <li><a href="/rohrreinigung-friedrichsdorf/">Rohrreinigung Friedrichsdorf</a></li>
+                        <li><a href="/rohrreinigung-karben/">Rohrreinigung Karben</a></li>
                         <li><a href="/#leistungen">TV-Inspektion</a></li>
                     </ul>
                 </div>
@@ -205,17 +215,17 @@ const { title, description, canonical, robots } = Astro.props;
                 <div class="footer-col">
                     <h4>Blog & Ratgeber</h4>
                     <ul>
-                        <li><a href="/blog">Alle Artikel</a></li>
-                        <li><a href="/blog/wc-etikette-was-darf-in-die-toilette">WC-Etikette</a></li>
-                        <li><a href="/blog/rohrverstopfung-beim-auszug">Rohrverstopfung &amp; Mietrecht</a></li>
-                        <li><a href="/blog/rohre-pflegen-profi-hacks">7 Profi-Hacks gegen Verstopfung</a></li>
+                        <li><a href="/blog/">Alle Artikel</a></li>
+                        <li><a href="/blog/wc-etikette-was-darf-in-die-toilette/">WC-Etikette</a></li>
+                        <li><a href="/blog/rohrverstopfung-beim-auszug/">Rohrverstopfung &amp; Mietrecht</a></li>
+                        <li><a href="/blog/rohre-pflegen-profi-hacks/">7 Profi-Hacks gegen Verstopfung</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Rechtliches</h4>
                     <ul>
-                        <li><a href="/impressum">Impressum</a></li>
-                        <li><a href="/datenschutz">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
                         <li><a href="#" onclick="showCookieSettings(); return false;">Cookie-Einstellungen</a></li>
                     </ul>
                 </div>
@@ -224,7 +234,7 @@ const { title, description, canonical, robots } = Astro.props;
                 <div class="social-links">
                     <a href="https://www.instagram.com/kanalfuchs" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><span>📷</span></a>
                 </div>
-                <p style="margin-top: 20px;">&copy; April 2026 Kanal- und Rohrreinigung Fuchs · Amin Abardouch · <a href="/impressum" style="color: rgba(255,255,255,0.6);">Impressum</a> · <a href="/datenschutz" style="color: rgba(255,255,255,0.6);">Datenschutz</a></p>
+                <p style="margin-top: 20px;">&copy; April 2026 Kanal- und Rohrreinigung Fuchs · Amin Abardouch · <a href="/impressum/" style="color: rgba(255,255,255,0.6);">Impressum</a> · <a href="/datenschutz/" style="color: rgba(255,255,255,0.6);">Datenschutz</a></p>
             </div>
         </div>
     </footer>
@@ -234,7 +244,7 @@ const { title, description, canonical, robots } = Astro.props;
         <div class="cookie-banner-inner">
             <div class="cookie-text">
                 <strong>Wir verwenden Cookies</strong>
-                <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzererfahrung zu bieten. Einige Cookies sind technisch notwendig, andere helfen uns, die Website zu verbessern. Weitere Informationen finden Sie in unserer <a href="/datenschutz">Datenschutzerklärung</a>.</p>
+                <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzererfahrung zu bieten. Einige Cookies sind technisch notwendig, andere helfen uns, die Website zu verbessern. Weitere Informationen finden Sie in unserer <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
             </div>
             <div class="cookie-buttons">
                 <button class="cookie-btn cookie-btn-decline" onclick="declineCookies()">Nur notwendige</button>

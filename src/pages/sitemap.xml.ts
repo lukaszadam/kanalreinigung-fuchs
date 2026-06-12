@@ -51,7 +51,7 @@ export const GET: APIRoute = async () => {
   </url>`),
     ...posts.map(post => `
   <url>
-    <loc>${SITE}/blog/${post.id}</loc>
+    <loc>${SITE}/blog/${post.id}/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`),

@@ -39,7 +39,7 @@ const { Content } = await render(post);
           "url": "https://kanal-fuchs.de/logo.png"
         }
       },
-      "url": `https://kanal-fuchs.de/blog/${post.id}`,
+      "url": `https://kanal-fuchs.de/blog/${post.id}/`,
       ...(post.data.image ? { "image": `https://kanal-fuchs.de${post.data.image}` } : {})
     })} />
 
