@@ -3,7 +3,7 @@ export const friedberg = {
     title: "Rohrreinigung Friedberg (Hessen) – Kreisstadt-Experte | Kanal Fuchs",
     description:
       "Rohrreinigung Friedberg (Hessen): Kanal Fuchs kennt die Leitungsinfrastruktur der Kreisstadt – Altstadt, Neubaugebiete, Gewerbe. Wurzelfräsen, Hochdruckreinigung, 24/7 Notdienst. Tel: 06003/8276464",
-    canonical: "https://kanal-fuchs.de/rohrreinigung-friedberg",
+    canonical: "https://kanal-fuchs.de/rohrreinigung-friedberg/",
   },
 
   hero: {

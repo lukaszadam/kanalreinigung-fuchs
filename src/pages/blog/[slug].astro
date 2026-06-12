@@ -17,7 +17,7 @@ const { Content } = await render(post);
 <Layout
   title={`${post.data.title} | Kanal Fuchs Blog`}
   description={post.data.description}
-  canonical={`https://kanal-fuchs.de/blog/${post.id}`}
+  canonical={`https://kanal-fuchs.de/blog/${post.id}/`}
 >
 
     <script type="application/ld+json" is:inline set:html={JSON.stringify({
