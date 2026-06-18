@@ -18,6 +18,7 @@ const staticPages = [
   { path: '/rohrreinigung-friedrichsdorf/',   priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-karben/',           priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-neu-anspach/',      priority: '0.9', changefreq: 'monthly' },
+  { path: '/rohrreinigung-kronberg/',          priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-oberursel/',        priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-ockstadt/',         priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-offenbach/',        priority: '0.9', changefreq: 'monthly' },
