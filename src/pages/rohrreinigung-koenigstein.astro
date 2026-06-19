@@ -140,7 +140,7 @@ import { koenigstein as d } from '../data/rohrreinigung-koenigstein';
         </div>
     </section>
 
-    <script type="application/ld+json" is:inline>{JSON.stringify({
+    <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": d.faq.items.map(item => ({
@@ -151,7 +151,7 @@ import { koenigstein as d } from '../data/rohrreinigung-koenigstein';
           "text": item.answer.replace(/<[^>]+>/g, '')
         }
       }))
-    })}</script>
+    })}></script>
 
     <!-- Orange Banner -->
     <section class="orange-banner">
