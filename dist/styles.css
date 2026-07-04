@@ -177,12 +177,58 @@ body {
     opacity: 1;
 }
 
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    pointer-events: none;
+}
+
 /* Desktop: mobile slider hidden; Mobile: desktop slider hidden */
 .mobile-slider { display: none; }
 
 @media (max-width: 768px) {
     .desktop-slider { display: none; }
     .mobile-slider { display: block; }
+}
+
+/* Hero CTA Overlay */
+.hero-cta {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-cta-button {
+    display: inline-block;
+    background: #E85D1C;
+    color: #fff;
+    padding: 18px 44px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 3px 10px rgba(232,93,28,0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.55), 0 4px 14px rgba(232,93,28,0.7);
+}
+
+@media (max-width: 768px) {
+    .hero-cta-button {
+        padding: 14px 30px;
+        font-size: 1.05rem;
+    }
 }
 
 /* Introduction Section */
