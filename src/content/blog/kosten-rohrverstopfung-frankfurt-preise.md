@@ -30,7 +30,7 @@ Viele Menschen denken, eine Rohrreinigung sei eine Rohrreinigung. In der Praxis 
 
 ## Realistische Preisrahmen – was Sie in der Region Frankfurt erwarten können
 
-Hier sind die Zahlen, die wir in unserem Einsatzgebiet täglich erleben. Keine garantierten Festpreise – die hängen immer vom Einzelfall ab – aber realistische Orientierungswerte für die Region Frankfurt, Wetterau und Taunus:
+Hier sind die Zahlen, die wir in unserem Einsatzgebiet täglich erleben. Keine garantierten Preise – die hängen immer vom Einzelfall ab – aber realistische Orientierungswerte für die Region Frankfurt, Wetterau und Taunus:
 
 | Leistung | Preisrahmen (Richtwert) |
 |---|---|

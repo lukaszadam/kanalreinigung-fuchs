@@ -2,14 +2,14 @@ export const koenigstein = {
   meta: {
     title: "Rohrreinigung Königstein im Taunus – Schnell & Fair | Kanal Fuchs",
     description:
-      "Rohrreinigung Königstein: Kanal Fuchs – verstopfter Abfluss, Toilette, Kanalspülung & Kamera-Inspektion. Festpreise, 24/7 Notdienst, in 60 Min vor Ort. Tel: 06003/8276464",
+      "Rohrreinigung Königstein: Kanal Fuchs – verstopfter Abfluss, Toilette, Kanalspülung & Kamera-Inspektion. Faire Preise, 24/7 Notdienst, in 60 Min vor Ort. Tel: 06003/8276464",
     canonical: "https://kanal-fuchs.de/rohrreinigung-koenigstein/",
   },
 
   hero: {
     heading: "Rohrreinigung Königstein im Taunus",
     subtext:
-      "Verstopfter Abfluss? Wir sind in 60 Minuten bei Ihnen. Schnell, sauber, erledigt – mit Festpreisen und ohne böse Überraschungen auf der Rechnung.",
+      "Verstopfter Abfluss? Wir sind in 60 Minuten bei Ihnen. Schnell, sauber, erledigt – mit fairen Preisen und ohne böse Überraschungen auf der Rechnung.",
     phone: "060038276464",
     phoneDisplay: "06003/8276464",
   },
@@ -76,7 +76,7 @@ export const koenigstein = {
   extendedServices: {
     heading: "Warum Kanal Fuchs für Königstein?",
     subtext:
-      "Soforteinsatz, Festpreise und echte Ortskenntnis – so arbeiten wir in Königstein im Taunus.",
+      "Soforteinsatz, faire Preise und echte Ortskenntnis – so arbeiten wir in Königstein im Taunus.",
     cards: [
       {
         icon: "⚡",
@@ -85,8 +85,8 @@ export const koenigstein = {
       },
       {
         icon: "💶",
-        title: "Festpreise – keine bösen Überraschungen",
-        text: "Wir nennen Ihnen vor dem Einsatz einen fairen Festpreis. Kein Stundentakt, kein Rätselraten. Was wir vereinbaren, steht auf der Rechnung – nichts anderes.",
+        title: "Faire Preise – keine bösen Überraschungen",
+        text: "Wir nennen Ihnen vor dem Einsatz einen fairen Preis. Kein Stundentakt, kein Rätselraten. Was wir vereinbaren, steht auf der Rechnung – nichts anderes.",
       },
       {
         icon: "📍",
@@ -153,7 +153,7 @@ export const koenigstein = {
       },
       {
         icon: "💶",
-        title: "Faire Festpreise",
+        title: "Faire Preise",
         text: "Vor dem Einsatz nennen wir Ihnen einen klaren Preis. Kein Stundentakt, keine versteckten Kosten. Was wir vereinbaren, steht auf der Rechnung.",
       },
       {
@@ -181,7 +181,7 @@ export const koenigstein = {
       {
         question: "Was kostet eine Rohrreinigung in Königstein?",
         answer:
-          "Wir nennen Ihnen vor dem Einsatz einen fairen Festpreis. Kein Stundentakt, kein Rätselraten. Die Kosten hängen vom Aufwand ab – wir klären das kurz am Telefon oder direkt vor Ort, bevor wir beginnen.",
+          "Wir nennen Ihnen vor dem Einsatz einen fairen Preis. Kein Stundentakt, kein Rätselraten. Die Kosten hängen vom Aufwand ab – wir klären das kurz am Telefon oder direkt vor Ort, bevor wir beginnen.",
       },
       {
         question: "Sind Sie auch nachts und am Wochenende erreichbar?",
