@@ -22,6 +22,7 @@ const staticPages = [
   { path: '/kanalreinigung-wiesbaden/',       priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-bad-homburg/',      priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-bad-vilbel/',       priority: '0.9', changefreq: 'monthly' },
+  { path: '/rohrreinigung-dreieich/',         priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-friedberg/',        priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-friedrichsdorf/',   priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-karben/',           priority: '0.9', changefreq: 'monthly' },
