@@ -2,14 +2,14 @@ export const koenigstein = {
   meta: {
     title: "Rohrreinigung Königstein im Taunus – Schnell & Fair | Kanal Fuchs",
     description:
-      "Rohrreinigung Königstein: Kanal Fuchs – verstopfter Abfluss, Toilette, Kanalspülung & Kamera-Inspektion. Faire Preise, 24/7 Notdienst, in 60 Min vor Ort. Tel: 06003/8276464",
+      "Rohrreinigung Königstein: Kanal Fuchs – verstopfter Abfluss, Toilette, Kanalspülung & Kamera-Inspektion. Faire Preise, 24/7 Notdienst, meist in 30–60 Min vor Ort. Tel: 06003/8276464",
     canonical: "https://kanal-fuchs.de/rohrreinigung-koenigstein/",
   },
 
   hero: {
     heading: "Rohrreinigung Königstein im Taunus",
     subtext:
-      "Verstopfter Abfluss? Wir sind in 60 Minuten bei Ihnen. Schnell, sauber, erledigt – mit fairen Preisen und ohne böse Überraschungen auf der Rechnung.",
+      "Verstopfter Abfluss? Wir sind meist innerhalb von 30 bis 60 Minuten bei Ihnen. Schnell, sauber, erledigt – mit fairen Preisen und ohne böse Überraschungen auf der Rechnung.",
     phone: "060038276464",
     phoneDisplay: "06003/8276464",
   },
@@ -27,12 +27,7 @@ export const koenigstein = {
     },
   },
 
-  galleryImage: {
-    src: "/kanalreinigung-frankfurt-2.jpg",
-    alt: "Rohrreinigung Königstein im Taunus – Kanal Fuchs Monteur",
-  },
-
-  blackBanner: "24/7 NOTDIENST KÖNIGSTEIN – IN 60 MINUTEN VOR ORT",
+  blackBanner: "24/7 NOTDIENST KÖNIGSTEIN – MEIST INNERHALB VON 60 MINUTEN VOR ORT",
 
   services: {
     heading: "Was wir in Königstein für Sie machen",
@@ -148,8 +143,8 @@ export const koenigstein = {
     items: [
       {
         icon: "⚡",
-        title: "In 60 Minuten vor Ort",
-        text: "Königstein liegt nur 25 Kilometer von Frankfurt entfernt – wir sind in der Region unterwegs und schnell bei Ihnen. Kein langes Warten.",
+        title: "Schnell vor Ort",
+        text: "Wir sind im Hochtaunuskreis unterwegs und bei einem akuten Notfall meist innerhalb von 30 bis 60 Minuten in Königstein bei Ihnen. Kein langes Warten.",
       },
       {
         icon: "💶",
