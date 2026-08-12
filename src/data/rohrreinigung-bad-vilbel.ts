@@ -9,7 +9,7 @@ export const badVilbel = {
   hero: {
     heading: "Rohrreinigung Bad Vilbel",
     subtext:
-      "Akute Verstopfung oder geplante Reinigung – wir sind Ihr Ansprechpartner für alles, was mit Abwasserrohren zu tun hat. Bad Vilbel grenzt direkt an unser Kerngebiet, entsprechend kurz sind unsere Wege zu Ihnen.",
+      "Akute Verstopfung oder geplante Reinigung. Wir sind Ihr Ansprechpartner für alles, was mit Rohrreinigung zu tun hat. Bad Vilbel gehört zu unserem Kerngebiet.",
     phone: "060038276464",
     phoneDisplay: "06003/8276464",
   },
@@ -17,10 +17,10 @@ export const badVilbel = {
   intro: {
     heading: "Ihr Rohrreiniger für Bad Vilbel: Schnell, sauber & fair",
     paragraphs: [
-      "Bad Vilbel ist stolz auf sein Mineralwasser – doch was die Quellenstadt berühmt macht, macht ihren Rohren zu schaffen: Das Wasser in der Region ist <strong>ausgesprochen hart</strong>. Kalk lagert sich über Jahre in Abflussleitungen, Siphons und WC-Abgängen ab, verengt die Querschnitte und bietet Fett, Haaren und Seifenresten perfekten Halt. Verstopfungen entstehen dadurch schneller und kehren häufiger wieder als in Weichwasser-Regionen.",
+      "Bad Vilbel ist stolz auf sein Mineralwasser. Doch was die Quellenstadt berühmt macht, macht ihren Rohren zu schaffen. Das Wasser in der Region ist nämlich <strong>ausgesprochen hart</strong>. Kalk lagert sich über Jahre in Abflussleitungen, Siphons und WC-Abgängen ab, verengt die Querschnitte und bietet Fett, Haaren und Seifenresten perfekten Halt. Verstopfungen entstehen dadurch schneller und kehren häufiger wieder als in Weichwasser-Regionen.",
       "Dazu kommt Bad Vilbels gemischte Bausubstanz: gewachsene Ortskerne in Gronau, Massenheim und am Heilsberg mit teils jahrzehntealten Leitungen auf der einen Seite, junge Neubaugebiete wie Dortelweil-West und der Quellenpark auf der anderen. Alte Rohre kämpfen mit Ablagerungen und müden Muffen, bei Neubauten sehen wir dagegen öfter Bauschutt-Reste oder zu flach verlegte Anschlüsse als Verstopfungsursache. Wir kennen beide Welten und bringen für beide das passende Werkzeug mit.",
       "Unsere <strong>Rohrreinigung</strong> ist in wenigen Minuten bei Ihnen. Wir reinigen Abflüsse, Rohre und Kanäle in Privathaushalten, Mehrfamilienhäusern und Gewerbebetrieben im gesamten Stadtgebiet.",
-      "Ob Hochdruckspülung, Kamerainspektion oder Rückstauschutz – wir haben die passende Lösung für jede Situation und sind rund um die Uhr für Sie erreichbar.",
+      "Ob Hochdruckspülung, Kamerainspektion oder Rückstauschutz. Wir haben die passende Lösung für jede Situation und sind rund um die Uhr für Sie erreichbar.",
     ],
     image: {
       src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
@@ -41,22 +41,22 @@ export const badVilbel = {
       {
         icon: "🚿",
         title: "Rohrreinigung bei Verstopfung",
-        text: "Küche, Bad, Dusche, Waschbecken, WC, Bodenablauf – mit der elektrischen Spirale entfernen wir Haare, Fett, Kalk und Fremdkörper, ohne Chemie und in aller Regel ohne Demontage.",
+        text: "Küche, Bad, Dusche, Waschbecken, WC, Bodenablauf. Mit der elektrischen Spirale entfernen wir Haare, Fett, Kalk und Fremdkörper, ohne Chemie und in aller Regel ohne Demontage.",
       },
       {
         icon: "💦",
         title: "Hochdruckspülung",
-        text: "Bei stark zugesetzten Leitungen, Fettschichten und Ablagerungen spülen wir das Rohr mit bis zu mehreren hundert Bar wieder auf vollen Querschnitt – gründlicher geht es nicht.",
+        text: "Bei stark zugesetzten Leitungen, Fettschichten und Ablagerungen spülen wir das Rohr mit bis zu mehreren hundert Bar wieder auf vollen Querschnitt. Gründlicher geht es nicht.",
       },
       {
         icon: "🔧",
         title: "Kanal- und Grundleitungsreinigung",
-        text: "Auch die Leitungen unter Haus und Garten bis zum öffentlichen Kanal gehören zu unserem Revier – inklusive Reinigung von Revisionsschächten und Hofabläufen.",
+        text: "Auch die Leitungen unter Haus und Garten bis zum öffentlichen Kanal gehören zu unserem Revier. Inklusive Reinigung von Revisionsschächten und Hofabläufen.",
       },
       {
         icon: "📡",
         title: "TV-Rohrkamera & Leckortung",
-        text: "Wenn Verstopfungen wiederkehren oder ein Schaden vermutet wird, schafft die Kamerabefahrung Gewissheit – mit Video, Bericht und zentimetergenauer Ortung von der Oberfläche.",
+        text: "Wenn Verstopfungen wiederkehren oder ein Schaden vermutet wird, schafft die Kamerabefahrung Gewissheit. Mit Video, Bericht und zentimetergenauer Ortung von der Oberfläche.",
         link: { href: "/tv-kanalinspektion/", label: "Mehr zur TV-Inspektion →" },
       },
       {
@@ -81,13 +81,13 @@ export const badVilbel = {
     cards: [
       {
         icon: "⚡",
-        title: "Kurze Wege nach Bad Vilbel",
-        text: "Bad Vilbel liegt direkt an unserem Kerngebiet – von hier sind es nur wenige Minuten bis zu Ihnen, ob Innenstadt, Heilsberg oder Dortelweil.",
+        title: "Direkt für Bad Vilbel",
+        text: "Bad Vilbel ist unser Kerngebiet. Wir sind in nur wenigen Minuten bei Ihnen, ob Innenstadt, Heilsberg oder Dortelweil.",
       },
       {
         icon: "🧰",
         title: "Ein Betrieb für alles",
-        text: "Von der verstopften Spüle bis zur Kamerabefahrung der Grundleitung – Sie brauchen keinen zweiten Anruf bei einer zweiten Firma.",
+        text: "Von der verstopften Spüle bis zur Kamerabefahrung der Grundleitung. Sie brauchen keinen zweiten Anruf bei einer zweiten Firma.",
       },
       {
         icon: "🤝",
@@ -97,25 +97,25 @@ export const badVilbel = {
       {
         icon: "💶",
         title: "Faire Preise",
-        text: "Wir nennen Ihnen vor dem Einsatz einen fairen Preis. Kein Stundentakt, kein Rätselraten. Was wir vereinbaren, steht auf der Rechnung – nichts anderes.",
+        text: "Wir nennen Ihnen vor dem Einsatz einen fairen Preis. Was wir vereinbaren, steht auf der Rechnung.",
       },
       {
         icon: "💧",
         title: "Kalkstadt-Experten",
-        text: "Wir kennen das harte Wasser Bad Vilbels und seine Folgen für Ihre Rohre – von hartnäckigen Ablagerungen in Altbauten bis zu Bauschutt-Resten in Neubaugebieten.",
+        text: "Wir kennen das harte Wasser Bad Vilbels und seine Folgen für Ihre Rohre. Von hartnäckigen Ablagerungen in Altbauten bis zu Bauschutt-Resten in Neubaugebieten.",
       },
       {
         icon: "⏱️",
         title: "Erreichbar, wenn es zählt",
-        text: "Rund um die Uhr, an 365 Tagen – Verstopfungen halten sich nicht an Öffnungszeiten, wir uns auch nicht.",
+        text: "Rund um die Uhr, an 365 Tagen. Verstopfungen halten sich nicht an Öffnungszeiten, wir uns auch nicht.",
       },
     ],
   },
 
   ortsteile: {
-    heading: "Für alle Stadtteile in Bad Vilbel – wir sind für Sie da",
+    heading: "Für alle Stadtteile in Bad Vilbel",
     subtext:
-      "Ob Heilsberg, Dortelweil, Massenheim oder Gronau – wir sind überall schnell zur Stelle.",
+      "Ob Heilsberg, Dortelweil, Massenheim oder Gronau. Wir sind überall schnell zur Stelle.",
     items: [
       {
         name: "Heilsberg",
@@ -142,12 +142,12 @@ export const badVilbel = {
       {
         icon: "⭐",
         title: "Top-Bewertungen",
-        text: "Unsere Kunden in Bad Vilbel und der Wetterau vertrauen uns. Top-Bewertungen von Haushalten und Gewerbebetrieben – weil wir halten, was wir versprechen.",
+        text: "Unsere Kunden in Bad Vilbel und der Wetterau vertrauen uns. Top-Bewertungen von Haushalten und Gewerbebetrieben. Weil wir halten, was wir versprechen.",
       },
       {
         icon: "💶",
         title: "Faire Preise",
-        text: "Wir erklären Ihnen vor Ort, was wir gefunden haben, was wir tun und was es kostet – bevor wir anfangen. Keine Überraschungen auf der Rechnung.",
+        text: "Wir erklären Ihnen vor Ort, was wir gefunden haben, was wir tun und was es kostet bevor wir anfangen. Keine Überraschungen auf der Rechnung.",
       },
       {
         icon: "🎓",
@@ -157,7 +157,7 @@ export const badVilbel = {
       {
         icon: "⏱️",
         title: "Immer erreichbar",
-        text: "Ob Werktag, Wochenende oder Feiertag – unser Telefon ist immer besetzt. Bei Notfällen fahren wir sofort los.",
+        text: "Ob Werktag, Wochenende oder Feiertag. Bei Notfällen fahren wir sofort los.",
       },
     ],
   },
