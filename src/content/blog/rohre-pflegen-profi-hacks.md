@@ -3,7 +3,7 @@ title: "Hilfe, es gluckert! 7 Profi-Hacks, wie Sie teure Rohrreinigungen und Was
 description: "Ein verstopftes Rohr passiert meist unerwartet – und wird teuer, wenn man die Warnsignale ignoriert. Mit diesen 7 Profi-Tipps pflegen Sie Ihre Leitungen richtig."
 date: 2026-04-28
 author: Kanal Fuchs
-image: /rohrreinigung-infografik.jpg
+image: /rohrreinigung-infografik.webp
 imageAlt: "Infografik: 7 Profi-Hacks gegen Rohrverstopfung"
 draft: false
 ---

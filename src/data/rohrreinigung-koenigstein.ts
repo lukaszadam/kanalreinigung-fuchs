@@ -22,7 +22,7 @@ export const koenigstein = {
       "Auch abends, am Wochenende und an Feiertagen. <strong>24/7 Notdienst</strong> für Königstein und Umgebung.",
     ],
     image: {
-      src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
+      src: "/reinigung/rohrreinigung-vorher-nachher.webp",
       alt: "Rohrreinigung Königstein – Kanal Fuchs",
     },
   },

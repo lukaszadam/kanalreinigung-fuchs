@@ -22,13 +22,13 @@ export const friedberg = {
       "Ob Hochdruckspülung, Kamerainspektion oder Wurzelfräsen. Wir haben die passende Lösung für jede Situation und sind rund um die Uhr für Sie erreichbar. Auch an Feiertagen.",
     ],
     image: {
-      src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
+      src: "/reinigung/rohrreinigung-vorher-nachher.webp",
       alt: "Rohrreinigung Friedberg – Kanal Fuchs",
     },
   },
 
   galleryImage: {
-    src: "/unser-mitarbeiter-friedberg.png",
+    src: "/unser-mitarbeiter-friedberg.webp",
     alt: "Rohrreinigung Friedberg – Unser Mitarbeiter",
   },
 

@@ -22,13 +22,13 @@ export const kronberg = {
       "Ob Hochdruckspülung, Kamerainspektion oder Wurzelfräsen – wir haben die passende Lösung für jede Situation und sind rund um die Uhr für Sie erreichbar.",
     ],
     image: {
-      src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
+      src: "/reinigung/rohrreinigung-vorher-nachher.webp",
       alt: "Rohrreinigung Kronberg – Kanal Fuchs",
     },
   },
 
   galleryImage: {
-    src: "/kanalreinigung-frankfurt-2.jpg",
+    src: "/kanalreinigung-frankfurt-2.webp",
     alt: "Rohrreinigung Kronberg im Taunus – Kanal Fuchs Monteur",
   },
 

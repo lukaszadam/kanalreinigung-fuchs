@@ -23,13 +23,13 @@ export const badVilbel = {
       "Ob Hochdruckspülung, Kamerainspektion oder Rückstauschutz. Wir haben die passende Lösung für jede Situation und sind rund um die Uhr für Sie erreichbar.",
     ],
     image: {
-      src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
+      src: "/reinigung/rohrreinigung-vorher-nachher.webp",
       alt: "Rohrreinigung Bad Vilbel – Kanal Fuchs",
     },
   },
 
   galleryImage: {
-    src: "/kanalreinigung-frankfurt-1.jpg",
+    src: "/kanalreinigung-frankfurt-1.webp",
     alt: "Rohrreinigung Bad Vilbel – Kanal Fuchs Monteur",
   },
 

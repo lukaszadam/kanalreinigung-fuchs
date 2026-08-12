@@ -23,13 +23,13 @@ export const neuIsenburg = {
       "Ob Hochdruckspülung, Kamerainspektion oder Grundleitungsreinigung – wir haben die passende Lösung für jede Situation und sind rund um die Uhr für Sie erreichbar.",
     ],
     image: {
-      src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
+      src: "/reinigung/rohrreinigung-vorher-nachher.webp",
       alt: "Rohrreinigung Neu-Isenburg – Kanal Fuchs",
     },
   },
 
   galleryImage: {
-    src: "/kanalreinigung-frankfurt-2.jpg",
+    src: "/kanalreinigung-frankfurt-2.webp",
     alt: "Rohrreinigung Neu-Isenburg – Kanal Fuchs Monteur",
   },
 

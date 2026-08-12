@@ -23,13 +23,13 @@ export const dreieich = {
       "Unsere <strong>Rohrreinigung</strong> ist in wenigen Minuten bei Ihnen. Wir reinigen Abflüsse, Rohre und Kanäle in Privathaushalten, Mehrfamilienhäusern und Gewerbebetrieben im gesamten Stadtgebiet.",
     ],
     image: {
-      src: "/reinigung/rohrreinigung-vorher-nachher.jpeg",
+      src: "/reinigung/rohrreinigung-vorher-nachher.webp",
       alt: "Rohrreinigung Dreieich – Kanal Fuchs",
     },
   },
 
   galleryImage: {
-    src: "/kanalreinigung-frankfurt-1.jpg",
+    src: "/kanalreinigung-frankfurt-1.webp",
     alt: "Rohrreinigung Dreieich – Kanal Fuchs Monteur",
   },
 
