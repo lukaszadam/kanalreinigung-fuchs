@@ -1,5 +1,5 @@
 ---
-import { readFileSync } from 'node:fs';
+import criticalCss from '../styles/global.css?raw';
 
 export interface Props {
   title: string;
@@ -8,11 +8,6 @@ export interface Props {
   robots?: string;
 }
 const { title, description, canonical, robots } = Astro.props;
-
-const criticalCss = readFileSync(
-  new URL('../../public/styles.css', import.meta.url),
-  'utf-8'
-);
 
 const germanMonths = [
   'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
