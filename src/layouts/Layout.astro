@@ -122,28 +122,36 @@ const criticalCss = readFileSync(
             </div>
             <nav class="nav" id="nav">
 <div class="nav-dropdown">
-                    <a href="/#leistungen" class="nav-parent-link">Leistungen</a>
+                    <a href="/rohr-kanalreinigung/" class="nav-parent-link">Kanalreinigung</a>
+                    <div class="nav-dropdown-menu">
+                        <span class="nav-dropdown-label">Frankfurt & Rhein-Main</span>
+                        <a href="/kanalreinigung-wiesbaden/" onclick="closeMenu()">Wiesbaden</a>
+                        <a href="/kanalreinigung-raunheim/" onclick="closeMenu()">Raunheim</a>
+                        <span class="nav-dropdown-label">Mittelhessen</span>
+                        <a href="/kanalreinigung-giessen/" onclick="closeMenu()">Gießen</a>
+                        <span class="nav-dropdown-label">Wetterau</span>
+                        <a href="/kanalreinigung-bad-nauheim/" onclick="closeMenu()">Bad Nauheim</a>
+                        <a href="/kanalreinigung-bad-vilbel/" onclick="closeMenu()">Bad Vilbel</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/rohr-kanalreinigung/" class="nav-parent-link">Rohrreinigung</a>
                     <div class="nav-dropdown-menu nav-dropdown-wide">
                         <div class="nav-dropdown-col">
                             <span class="nav-dropdown-label">Frankfurt & Rhein-Main</span>
-                            <a href="/kanalsanierung-frankfurt/" onclick="closeMenu()">Frankfurt</a>
                             <a href="/rohrreinigung-offenbach/" onclick="closeMenu()">Offenbach</a>
                             <a href="/rohrreinigung-neu-isenburg/" onclick="closeMenu()">Neu-Isenburg</a>
                             <a href="/rohrreinigung-dreieich/" onclick="closeMenu()">Dreieich</a>
-                            <a href="/kanalreinigung-wiesbaden/" onclick="closeMenu()">Wiesbaden</a>
-                            <a href="/kanalreinigung-raunheim/" onclick="closeMenu()">Raunheim</a>
-                            <span class="nav-dropdown-label">Mittelhessen</span>
-                            <a href="/kanalreinigung-giessen/" onclick="closeMenu()">Gießen</a>
-                        </div>
-                        <div class="nav-dropdown-col">
                             <span class="nav-dropdown-label">Wetterau</span>
-                            <a href="/kanalreinigung-bad-nauheim/" onclick="closeMenu()">Bad Nauheim</a>
+                            <a href="/rohrreinigung-bad-nauheim/" onclick="closeMenu()">Bad Nauheim</a>
                             <a href="/rohrreinigung-bad-vilbel/" onclick="closeMenu()">Bad Vilbel</a>
                             <a href="/rohrreinigung-friedberg/" onclick="closeMenu()">Friedberg</a>
                             <a href="/rohrreinigung-karben/" onclick="closeMenu()">Karben</a>
                             <a href="/rohrreinigung-rosbach/" onclick="closeMenu()">Rosbach</a>
                             <a href="/rohrreinigung-rodheim/" onclick="closeMenu()">Rodheim</a>
                             <a href="/rohrreinigung-ockstadt/" onclick="closeMenu()">Ockstadt</a>
+                        </div>
+                        <div class="nav-dropdown-col">
                             <span class="nav-dropdown-label">Hochtaunus</span>
                             <a href="/rohrreinigung-bad-homburg/" onclick="closeMenu()">Bad Homburg</a>
                             <a href="/rohrreinigung-friedrichsdorf/" onclick="closeMenu()">Friedrichsdorf</a>
@@ -157,8 +165,9 @@ const criticalCss = readFileSync(
                     </div>
                 </div>
                 <div class="nav-dropdown">
-                    <a href="/rohr-kanalreinigung/" class="nav-parent-link">Rohr- &amp; Kanalreinigung</a>
+                    <a href="/rohr-kanalreinigung/" class="nav-parent-link">Technik</a>
                     <div class="nav-dropdown-menu">
+                        <span class="nav-dropdown-label">Probleme im Haus</span>
                         <div class="nav-flyout">
                             <a href="/wc-bad-kueche-verstopfung/" onclick="closeMenu()">WC / Bad / Küche <span class="nav-flyout-arrow">›</span></a>
                             <div class="nav-flyout-menu">
@@ -168,21 +177,12 @@ const criticalCss = readFileSync(
                                 <a href="/wc-verstopft-wiesbaden/" onclick="closeMenu()">Wiesbaden</a>
                                 <a href="/wc-verstopft-friedberg/" onclick="closeMenu()">Friedberg</a>
                                 <a href="/wc-verstopft-bad-homburg/" onclick="closeMenu()">Bad Homburg</a>
-                                <span class="nav-dropdown-label">Bad &amp; Küche</span>
-                                <a href="/wasser-auslaufen-kueche-bad-frankfurt/" onclick="closeMenu()">Wasser läuft aus</a>
-                                <span class="nav-dropdown-label">Abfluss allgemein</span>
-                                <a href="/abfluss-verstopft-gross-gerau/" onclick="closeMenu()">Groß-Gerau</a>
-                                <a href="/abfluss-verstopft-giessen/" onclick="closeMenu()">Gießen</a>
                             </div>
                         </div>
-                        <a href="/bodenablaeufe-keller-rueckstau/" onclick="closeMenu()">Bodenabläufe &amp; Rückstau</a>
-                        <a href="/wurzelfraesen-kanal/" onclick="closeMenu()">Wurzelfräsen im Kanal</a>
-                        <a href="/industriereinigung-frankfurt/" onclick="closeMenu()">Industriereinigung Frankfurt</a>
-                    </div>
-                </div>
-                <div class="nav-dropdown">
-                    <a href="/kanaltechnik-vorsorge/" class="nav-parent-link">Kanaltechnik &amp; Vorsorge</a>
-                    <div class="nav-dropdown-menu">
+                        <a href="/wasser-auslaufen-kueche-bad-frankfurt/" onclick="closeMenu()">Wasser läuft aus</a>
+                        <a href="/abfluss-verstopft-gross-gerau/" onclick="closeMenu()">Abfluss Groß-Gerau</a>
+                        <a href="/abfluss-verstopft-giessen/" onclick="closeMenu()">Abfluss Gießen</a>
+                        <span class="nav-dropdown-label">Vorsorge &amp; Prüfung</span>
                         <div class="nav-flyout">
                             <a href="/tv-kanalinspektion/" onclick="closeMenu()">TV-Kanalinspektion <span class="nav-flyout-arrow">›</span></a>
                             <div class="nav-flyout-menu">
@@ -192,7 +192,11 @@ const criticalCss = readFileSync(
                         </div>
                         <a href="/dichtheitspruefung/" onclick="closeMenu()">Dichtheitsprüfung</a>
                         <a href="/rueckstauklappe-wartung/" onclick="closeMenu()">Rückstauklappen-Wartung</a>
+                        <span class="nav-dropdown-label">Kanalservice</span>
                         <a href="/kanalsanierung-frankfurt/" onclick="closeMenu()">Kanalsanierung</a>
+                        <a href="/bodenablaeufe-keller-rueckstau/" onclick="closeMenu()">Bodenabläufe &amp; Rückstau</a>
+                        <a href="/wurzelfraesen-kanal/" onclick="closeMenu()">Wurzelfräsen im Kanal</a>
+                        <a href="/industriereinigung-frankfurt/" onclick="closeMenu()">Industriereinigung Frankfurt</a>
                     </div>
                 </div>
                 <a href="/ueber-uns/" onclick="closeMenu()">Über uns</a>
@@ -214,6 +218,7 @@ const criticalCss = readFileSync(
                         <li><a href="/#leistungen">Kanalreinigung</a></li>
                         <li><a href="/kanalsanierung-frankfurt/">Kanalsanierung Frankfurt</a></li>
                         <li><a href="/kanalreinigung-bad-nauheim/">Kanalreinigung Bad Nauheim</a></li>
+                        <li><a href="/rohrreinigung-bad-nauheim/">Rohrreinigung Bad Nauheim</a></li>
                         <li><a href="/rohrreinigung-bad-vilbel/">Rohrreinigung Bad Vilbel</a></li>
                         <li><a href="/kanalreinigung-bad-vilbel/">Kanalreinigung Bad Vilbel</a></li>
                         <li><a href="/rohrreinigung-neu-isenburg/">Rohrreinigung Neu-Isenburg</a></li>

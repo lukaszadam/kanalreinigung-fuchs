@@ -17,6 +17,7 @@ const staticPages = [
   { path: '/wc-verstopft-friedberg/',                 priority: '0.9', changefreq: 'monthly' },
   { path: '/wc-verstopft-bad-homburg/',               priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-bad-nauheim/',     priority: '0.9', changefreq: 'monthly' },
+  { path: '/rohrreinigung-bad-nauheim/',      priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-giessen/',         priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-raunheim/',        priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-wiesbaden/',       priority: '0.9', changefreq: 'monthly' },
