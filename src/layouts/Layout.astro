@@ -13,6 +13,13 @@ const criticalCss = readFileSync(
   new URL('../../public/styles.css', import.meta.url),
   'utf-8'
 );
+
+const germanMonths = [
+  'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+  'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember',
+];
+const now = new Date();
+const currentMonthYear = `${germanMonths[now.getMonth()]} ${now.getFullYear()}`;
 ---
 
 <!DOCTYPE html>
@@ -270,7 +277,7 @@ const criticalCss = readFileSync(
                 <div class="social-links">
                     <a href="https://www.instagram.com/kanalfuchs" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><span>📷</span></a>
                 </div>
-                <p style="margin-top: 20px;">&copy; April 2026 Kanal- und Rohrreinigung Fuchs · Amin Abardouch · <a href="/impressum/" style="color: rgba(255,255,255,0.6);">Impressum</a> · <a href="/datenschutz/" style="color: rgba(255,255,255,0.6);">Datenschutz</a></p>
+                <p style="margin-top: 20px;">&copy; {currentMonthYear} Kanal- und Rohrreinigung Fuchs · <a href="/impressum/" style="color: rgba(255,255,255,0.6);">Impressum</a> · <a href="/datenschutz/" style="color: rgba(255,255,255,0.6);">Datenschutz</a></p>
             </div>
         </div>
     </footer>
