@@ -159,7 +159,7 @@ export const friedberg = {
       {
         icon: "🎓",
         title: "Wetterau-Experten",
-        text: "Seit über 15 Jahren arbeiten wir in der Wetterau. Wir wissen, dass in Friedberger Altbauten oft noch Muffenrohre verbaut sind, dass bestimmte Straßenzüge Probleme mit Rückstau haben – und wie man damit umgeht.",
+        text: "Seit vielen Jahren arbeiten wir in der Wetterau. Wir wissen, dass in Friedberger Altbauten oft noch Muffenrohre verbaut sind, dass bestimmte Straßenzüge Probleme mit Rückstau haben – und wie man damit umgeht.",
       },
       {
         icon: "⏱️",
