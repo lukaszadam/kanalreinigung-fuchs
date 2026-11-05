@@ -28,6 +28,7 @@ const staticPages = [
   { path: '/kanalreinigung-dreieich/',        priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-offenbach/',       priority: '0.9', changefreq: 'monthly' },
   { path: '/kanalreinigung-bad-homburg/',     priority: '0.9', changefreq: 'monthly' },
+  { path: '/kanalreinigung-friedrichsdorf/',  priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-friedberg/',        priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-friedrichsdorf/',   priority: '0.9', changefreq: 'monthly' },
   { path: '/rohrreinigung-karben/',           priority: '0.9', changefreq: 'monthly' },
